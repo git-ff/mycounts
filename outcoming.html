@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Outcoming | MyCounts</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Main theme -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+  </header>
+
+  <main>
+    <div class="container-fluid"> 
+      <div class="row">
+        <!-- BEGIN wrapper -->
+        <div class="wrapper vertical-center">
+
+          <!-- BEGIN panel -->
+          <div class="panel">
+            <div class="panel-heading">
+              <div class="panel-header">Добавить расход</div>
+            </div>
+            <div class="panel-body">
+
+              <!-- BEGIN form outcoming -->
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="outcoming_description" placeholder="Наименование расхода" autocomplete="on">
+                    <input type="number" class="sum_outcoming" placeholder="Сумма" min="0" max="99999999">
+                    <input type="date" class="outcoming_date">
+
+                    <!-- BEGIN select_account -->
+                    <select class="select_account_outcoming" id="select_account">
+                      <option>4010-Сбербанк</option>
+                      <option>2030-Альфабанк</option>
+                      <option>Наличные</option>
+                    </select><!-- END select_account -->
+
+                    <!-- BEGIN button -->
+                    <div class="text-center">
+                      <button class="btn btn-lg" type="submit">
+                        Добавить
+                      </button>
+                    </div><!-- END button -->
+
+                  </div><!-- END input-group -->
+                </div><!-- END form-group -->
+              </form><!-- END form outcoming -->
+            </div><!-- END panel-body -->
+          </div><!-- END panel -->
+        </div><!-- END wrapper -->
+
+      </div><!-- END row -->
+    </div><!-- END container-fluid -->
+
+  </main>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
