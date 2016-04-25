@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <!-- Main theme -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Vertical div alignment -->
+  <link rel="stylesheet" href="css/vertical-center.css">
 </head>
 
 <body>
@@ -22,20 +24,29 @@
   <main>
     <div class="container-fluid"> 
       <div class="row">
+
+        <!-- Left column -->
+        <div class="col-xs-hidden col-sm-hidden col-md-hidden col-lg-1">
+        </div><!-- END Left column -->
+
         <!-- BEGIN wrapper -->
-        <div class="wrapper vertical-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+          <div class="wrapper vertical-center">
 
-          <!-- BEGIN panel -->
-          <div class="panel no_border">
-            <div class="panel-body">
+            <!-- BEGIN panel -->
+            <div class="panel panel-default">
+              <div class="panel-body">
 
-              <form class="account_list_management_form" role="account_list_management">
+                <form class="form-inline" role="account_list_management">
+                  <!-- BEGIN form-group -->
+                  <div class="form-group">
+                    <input type="text" class="form-control new_acc_input input-lg" placeholder="Укажите название счёта">
+                    <button class="btn btn-lg pull-right btn-mobile-100" type="submit">Добавить</button>
+                  </div><!-- END form-group -->
+                </form>
 
-                <!-- BEGIN input_group -->
-                <div class="input_group_new_acc">
-                  <input type="text" class="new_acc_input input-lg" placeholder="Укажите название счёта">
-                  <button class="btn btn-lg pull-right" type="submit">Добавить</button>
-                </div><!-- END input_group -->
+                <div class="clearfix"></div>
+
 
                 <div class="account_holder">
                   <div class="account_name"><p>Тинькофф USD</p></div>
@@ -65,10 +76,16 @@
                   </div>  
                 </div>
 
-              </form>
-            </div><!-- END panel-body -->
-          </div><!-- END panel -->
-        </div><!-- END wrapper -->
+              </div><!-- END panel-body -->
+            </div><!-- END panel -->
+          </div><!-- END wrapper --> 
+        </div>
+
+        <!-- BEGIN Right column -->
+        <div class="col-xs-hidden col-sm-hidden col-md-hidden col-lg-1">
+        </div><!-- END Right column -->
+
+
 
       </div><!-- END row -->
     </div><!-- END container-fluid -->

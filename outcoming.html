@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <!-- Main theme -->
   <link rel="stylesheet" href="css/style.css">
+<!-- Vertical div alignment -->
+  <link rel="stylesheet" href="css/vertical-center.css">
+
 </head>
 
 <body>
@@ -22,44 +25,67 @@
   <main>
     <div class="container-fluid"> 
       <div class="row">
+        <!-- Left column -->
+        <div class="col-xs-hidden col-sm-hidden col-md-hidden col-lg-1">
+        </div><!-- END Left column -->
+
         <!-- BEGIN wrapper -->
-        <div class="wrapper vertical-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+          <div class="wrapper vertical-center">
 
-          <!-- BEGIN panel -->
-          <div class="panel">
-            <div class="panel-heading">
-              <div class="panel-header">Добавить расход</div>
-            </div>
-            <div class="panel-body">
+            <!-- BEGIN panel -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2>Добавить расход</h2>
+              </div><!-- END panel-heading -->
+              <div class="panel-body">
 
-              <!-- BEGIN form outcoming -->
-              <form class="form-inline" role="form">
-                <div class="form-group">
-                  <div class="input-group">
-                    <input type="text" class="outcoming_description" placeholder="Наименование расхода" autocomplete="on">
-                    <input type="number" class="sum_outcoming" placeholder="Сумма" min="0" max="99999999">
-                    <input type="date" class="outcoming_date">
+                <!-- BEGIN form outcoming -->
+                <form class="form-inline" role="form">
+                  <div class="form-group">
 
-                    <!-- BEGIN select_account -->
-                    <select class="select_account_outcoming" id="select_account">
-                      <option>4010-Сбербанк</option>
-                      <option>2030-Альфабанк</option>
-                      <option>Наличные</option>
-                    </select><!-- END select_account -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <input type="text" class="form-control outcoming_description" placeholder="Наименование расхода" autocomplete="on">
+                      </div>
 
-                    <!-- BEGIN button -->
-                    <div class="text-center">
-                      <button class="btn btn-lg" type="submit">
-                        Добавить
-                      </button>
-                    </div><!-- END button -->
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <input type="number" class="form-control outcoming_amount" placeholder="Сумма" min="0" max="99999999">
+                      </div>
 
-                  </div><!-- END input-group -->
-                </div><!-- END form-group -->
-              </form><!-- END form outcoming -->
-            </div><!-- END panel-body -->
-          </div><!-- END panel -->
-        </div><!-- END wrapper -->
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <input type="date" class="form-control outcoming_date" id="outcoming_date" min="2014-01-01" max="2030-12-31">
+                      </div>
+                      <!-- BEGIN select_account -->
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <select class="form-control select_account_outcoming" id="select_account">
+                          <option>4010-Сбербанк</option>
+                          <option>2030-Альфабанк</option>
+                          <option>Наличные</option>
+                        </select><!-- END select_account -->
+                      </div> 
+
+                      <div class="clearfix"></div>
+
+                      <!-- BEGIN button -->
+                      <div class="button-holder">
+                        <button class="btn btn-lg margin-top btn-mobile-100" type="submit">
+                          Добавить
+                        </button>
+                      </div><!-- END button-holder -->
+
+                    </div> <!-- END row -->
+                  </div><!-- END form-group -->
+                </form><!-- END form outcoming -->
+
+              </div><!-- END panel-body -->
+            </div><!-- END panel -->
+          </div><!-- END wrapper --> 
+        </div>
+
+        <!-- BEGIN Right column -->
+        <div class="col-xs-hidden col-sm-hidden col-md-hidden col-lg-1">
+        </div><!-- END Right column -->
 
       </div><!-- END row -->
     </div><!-- END container-fluid -->
@@ -68,6 +94,7 @@
 
   <footer>
   </footer>
+
 
 </body>
 
