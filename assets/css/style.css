@@ -1,0 +1,58 @@
+.main-container {
+min-width: 240px;
+max-width: 260px;
+}
+
+
+.navbar-header {
+text-align: center;
+background-color: black;
+width: 100%;
+}
+
+.navbar-header a {
+color:white;
+width: 100%;
+}
+
+
+.panel-body,
+.panel-default{
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+}
+
+ul.nav-tabs>li
+ {
+  width: 50%;
+  text-align: center;
+  }
+
+ul.nav-tabs>li>a
+ {
+  padding-left: 0;
+  padding-right: 0;
+  }
+
+
+.button-holder {
+  text-align: center;
+}
+
+.checkbox label {
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+}
+
+.input-group {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+.main-container {
+max-width: 260px;
+}
+}

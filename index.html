@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Sign In/Register | MyCounts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Loading Flat UI -->
+  <link href="assets/css/flat-ui.min.css" rel="stylesheet">
+
+  <!-- Loading Vertical-center CSS -->
+  <link href="css/vertical-center.css" rel="stylesheet">
+
+  <!-- Main style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>    
+
+  <main>
+    <div class="container-fluid"> 
+      <div class="row">
+        <!-- Left column -->
+        <div class="col-xs-hidden col-sm-4 col-md-4 col-lg-5">
+        </div><!-- END Left column -->
+
+        <!-- BEGIN Center column -->
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
+          <!-- BEGIN wrapper -->
+          <div class="wrapper vertical-center">
+            <div class="main-container">
+              <nav class="navbar navbar-tabs" role="navigation">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">MyCounts</a>
+                </div><!-- END navbar-header -->
+
+
+                <!-- Menu items -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab_a" data-toggle="tab">Вход</a></li>
+                  <li><a href="#tab_b" data-toggle="tab">Регистрация</a></li>
+                </ul>
+              </nav><!-- END navbar -->
+
+              <div class="tab-content">
+                <!-- tab_a -->
+                <div class="tab-pane active" id="tab_a">
+                  <!-- BEGIN panel -->
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <!-- BEGIN form -->
+                      <form class="form" role="form">
+                        <div class="form-group">
+                          <div class="row">
+
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                              </span>
+                              <input type="email" class="form-control login_email flat" placeholder="e-mail" autocomplete="on" required />
+                            </div>
+
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-lock"></span>
+                              </span>
+                              <input type="password" class="form-control login_password flat" placeholder="Пароль" autocomplete="on" required />
+                            </div>
+
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Запомнить
+                              </label>
+                              <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="На этом устройстве до очистки истории браузера или cookies"></i>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <!-- BEGIN button -->
+                            <div class="button-holder">
+                              <button class="btn btn-md btn-mobile-100" type="submit">
+                                Войти
+                              </button>
+                            </div><!-- END button-holder -->
+
+                          </div> <!-- END row -->
+                        </div><!-- END form-group -->
+                      </form><!-- END form-->
+                    </div><!-- END panel-body -->
+                  </div><!-- END panel -->
+                </div><!-- END tab-pane #tab_a -->
+
+
+                <!-- tab_b -->
+                <div class="tab-pane" id="tab_b">
+
+                  <!-- BEGIN panel -->
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <!-- BEGIN form -->
+                      <form class="form" role="form">
+                        <div class="form-group">
+
+                          <div class="row">
+
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                              </span>
+                              <input type="email" class="form-control login_email flat" placeholder="e-mail" autocomplete="on" required />
+                            </div>
+
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-lock"></span>
+                              </span>
+                              <input type="password" class="form-control login_password flat" placeholder="Пароль" autocomplete="on" required />
+                            </div>
+
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" required> Я согласен с <a href="#">соглашением</a>
+                              </label>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <!-- BEGIN button -->
+                            <div class="button-holder">
+                              <button class="btn btn-md btn-mobile-100" type="submit">
+                                Зарегистрироваться
+                              </button>
+                            </div><!-- END button-holder -->
+
+                          </div> <!-- END row -->
+                        </div><!-- END form-group -->
+                      </form><!-- END form-->
+                    </div><!-- END panel-body -->
+                  </div><!-- END panel -->
+                </div><!-- END tab-pane #tab_b -->
+
+              </div><!-- tab content -->
+
+            </div><!-- END main-container -->
+
+          </div><!-- END wrapper --> 
+        </div><!-- END Center column -->
+
+        <!-- BEGIN Right column -->
+        <div class="col-xs-hidden col-sm-4 col-md-4 col-lg-5">
+        </div><!-- END Right column -->
+
+      </div><!-- END row -->
+    </div><!-- END container-fluid -->
+
+
+  </main>
+
+
+
+  <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+  <script src="assets/js/vendor/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/vendor/video.js"></script>
+  <script src="assets/js/flat-ui.min.js"></script>
+
+</body>
+</html>
