@@ -1,58 +1,87 @@
-.main-container {
-min-width: 240px;
-max-width: 260px;
+body {
+  background-color: #422626;
 }
 
-
-.navbar-header {
-text-align: center;
-background-color: black;
-width: 100%;
+.text-centered {
+  text-align: center !important;
 }
 
-.navbar-header a {
-color:white;
-width: 100%;
-}
-
-
-.panel-body,
-.panel-default{
-  padding-bottom: 0;
-  margin-bottom: 0;
-
-}
-
-ul.nav-tabs>li
- {
-  width: 50%;
-  text-align: center;
-  }
-
-ul.nav-tabs>li>a
- {
-  padding-left: 0;
-  padding-right: 0;
-  }
-
-
-.button-holder {
-  text-align: center;
-}
-
-.checkbox label {
-  font-size: inherit;
-  padding: 0;
+.no-margin {
   margin: 0;
-  line-height: inherit;
 }
 
-.input-group {
+
+/*begin logo align*/
+.navbar-header {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  float:none;
+}
+/*end logo align*/
+
+.nav,
+.navbar-default {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+ul.nav>li,
+ul.nav-tabs>li {
+  width: 50%;
+  border: none;
+}
+
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+  background-color: #B38193;
+  border: none;
+}
+
+
+
+.login-form {
+  margin-top: -33px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #B38193;
+}
+
+
+
+.tab-pane {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.placeholder {
+  margin-top: 15px;
+  padding-bottom: 22px;
+  height: 13px;
+}
+
+label {
   margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
 
-@media screen and (max-width: 767px) {
-.main-container {
-max-width: 260px;
+
+.center-column {
+  max-width: 500px;
 }
+
+
+@media (max-width: 767px) {
+  .center-column {
+    min-width: 300px;
+  }
 }
+
+
