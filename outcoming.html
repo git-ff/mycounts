@@ -6,15 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Outcoming | MyCounts</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Loading Bootstrap -->
+    <link href="assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  <!-- Main theme -->
-  <link rel="stylesheet" href="css/style.css">
-<!-- Vertical div alignment -->
-  <link rel="stylesheet" href="css/vertical-center.css">
+    <!-- Loading Flat UI -->
+    <link href="assets/css/flat-ui.min.css" rel="stylesheet">
+
+    <!-- Loading Main style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Loading FlatUI Checkbox Fix style -->
+    <link href="assets/css/flatui_checkbox_fix.css" rel="stylesheet">
+
+    <!-- Loading Vertical-center CSS -->
+    <link href="assets/css/vertical-center.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
@@ -44,32 +58,25 @@
                 <form class="form-inline" role="form">
                   <div class="form-group">
 
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <input type="text" class="form-control outcoming_description" placeholder="Наименование расхода" autocomplete="on">
-                      </div>
-
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <input type="number" class="form-control outcoming_amount" placeholder="Сумма" min="0" max="99999999">
-                      </div>
-
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <input type="date" class="form-control outcoming_date" id="outcoming_date" min="2014-01-01" max="2030-12-31">
-                      </div>
+                  <div class="row row_input_holder">
+                      <div class="form_input_holder">
+                      <input type="text" class="form-control outcoming_description" placeholder="Наименование расхода" autocomplete="on">
+                      
+                      <input type="number" class="form-control outcoming_amount" placeholder="Сумма" min="0" max="99999999">
+                      
+                      <input type="date" class="form-control outcoming_date" id="outcoming_date" min="2014-01-01" max="2030-12-31">
                       <!-- BEGIN select_account -->
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <select class="form-control select_account_outcoming" id="select_account">
-                          <option>4010-Сбербанк</option>
-                          <option>2030-Альфабанк</option>
-                          <option>Наличные</option>
-                        </select><!-- END select_account -->
-                      </div> 
-
+                      <select class="form-control select_account_outcoming" id="select_account">
+                        <option>4010-Сбербанк</option>
+                        <option>2030-Альфабанк</option>
+                        <option>Наличные</option>
+                      </select><!-- END select_account -->
+                      </div><!-- END form_input_holder -->
                       <div class="clearfix"></div>
 
                       <!-- BEGIN button -->
                       <div class="button-holder">
-                        <button class="btn btn-lg margin-top btn-mobile-100" type="submit">
+                        <button class="btn btn-primary btn-lg btn-mobile-100" type="submit">
                           Добавить
                         </button>
                       </div><!-- END button-holder -->
@@ -94,6 +101,13 @@
 
   <footer>
   </footer>
+
+  <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+  <script src="assets/js/vendor/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/vendor/video.js"></script>
+  <script src="assets/js/flat-ui.min.js"></script>
+
 
 
 </body>

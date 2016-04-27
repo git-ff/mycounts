@@ -7,8 +7,20 @@ body {
 }
 
 .no-margin {
-  margin: 0;
+  margin: none !important;
 }
+
+.no-border {
+  border: none !important;
+}
+
+.no-radius {
+  border-radius: 0 !important;
+}
+
+
+
+
 
 
 /*begin logo align*/
@@ -46,6 +58,7 @@ ul.nav-tabs>li {
 
 
 
+
 .login-form {
   margin-top: -33px;
   border-top-left-radius: 0;
@@ -78,10 +91,137 @@ label {
 }
 
 
+
+.panel-body {
+  background-color:  #B38193!important;
+}
+
+.add_account {
+  width: 100% !important;  
+}
+
+.account_holder {
+  height: 53px;
+  width: 100%;
+  float:left;
+  border-top:1px solid black;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 6px;
+  background-color: #90C3D4;
+}
+
+.account_holder a.select_account {
+ color: #6E6E6E;
+}
+
+.account_holder a.select_account:hover {
+ color: #4A4A4A;
+}
+
+.account_name {
+ width: 75%;
+ height: inherit;
+ float:left;
+ font-weight: 700;
+ font-size: 18px;
+ text-align: left;
+ padding-left: 15px;
+ padding-top: 10px;
+}
+
+.account_placeholder {
+  width: 5%;
+  height: inherit;
+  float:left;
+}
+
+.delete_acc {
+  width: 20%;
+  height: inherit;
+  float:left;
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.btn-primary.btn-circle {
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: black;
+}
+
+.btn-primary.btn-circle:hover {
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: white;
+}
+
+.form-control.input-lg.no-border{
+  margin-right: 5px;
+  width: 65%;
+}
+
+.button-holder {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form_input_holder {
+  width: 100%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.row_input_holder {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.panel-heading h2 {
+  text-align: center;
+}
+
+
 @media (max-width: 767px) {
   .center-column {
     min-width: 300px;
   }
+
+  .account_name {
+    width: 85%;
+  }
+
+  .account_placeholder {
+    width: 1%;
+  }
+
+  .delete_acc {
+    width: 14%;
+  }
+
+  .btn-mobile-100 {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .form-control.input-lg.no-border{
+    width: 100% !important;
+  }
+
+  .panel-heading h2 {
+    font-size: 37px;
+  }
+
+  .form_input_holder {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
 }
-
-
