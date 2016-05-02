@@ -42,8 +42,9 @@ body {
   border-radius: 0;
 }
 
-ul.nav>li,
-ul.nav-tabs>li {
+ul.nav>li.log-in,
+ul.nav>li.active,
+ul.nav-tabs>li.registration {
   width: 50%;
   border: none;
 }
@@ -57,6 +58,21 @@ ul.nav-tabs>li {
 }
 
 
+/* START MAIN NAV MENU */
+ul.nav>li.overview,
+ul.nav>li.new-entry,
+ul.nav>li.reports,
+ul.nav>li.settings,
+ul.nav>li.active {
+  width: 20%;
+  border: none;
+}
+
+li.main {
+  width: 20%;
+}
+
+/* END MAIN NAV MENU */
 
 
 .login-form {
@@ -148,17 +164,33 @@ label {
   text-align: right;
 }
 
+.delete_acc>i.glyphicon.glyphicon-trash {
+  padding-top: 10px;
+  padding-right: 11px;
+}
+
+.delete_acc>i.glyphicon.glyphicon-trash:hover {
+  color: red;
+}
+
+
 .btn-primary.btn-circle {
   border-radius: 50%;
   background-color: #ffffff;
   color: black;
+  padding: 10px 12px;
+  margin-top: 1px;
 }
 
 .btn-primary.btn-circle:hover {
   border-radius: 50%;
   background-color: #ff0000;
   color: white;
+  padding: 10px 12px;
+  margin-top: 1px;
 }
+
+
 
 .form-control.input-lg.no-border{
   margin-right: 5px;
@@ -185,6 +217,80 @@ label {
 
 .panel-heading h2 {
   text-align: center;
+}
+
+
+
+
+
+
+/*TABLE INFO BEGIN*/
+.acc-name,
+.balance {
+font-weight: 600;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+color: red;
+}
+
+.table-fixed tbody td.summary {
+font-weight: 800;
+}
+
+/*TABLE - SCROLL START */
+.table-fixed thead {
+  width: 100%;
+}
+
+.table-fixed tbody {
+  height: 210px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.table-fixed thead, .table-fixed tbody, .table-fixed tfoot, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+/*TABLE - SCROLL END*/
+/*TABLE INFO END*/
+
+
+.goal-progressbar-holder {
+height: 25px;
+border-radius: 0;
+min-width: 2em;
+margin-bottom: 2px;
+}
+
+.goal-name,
+.item-name {
+  font-weight: 600;
+}
+
+.progressbar-goal-done,
+.progressbar-goal-remain,
+.progressbar-goal-descr{
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+}
+
+
+.glyphicon-gray, .glyphicon-gray a {
+  color: gray;
 }
 
 
@@ -224,4 +330,24 @@ label {
     margin-left: 0;
   }
 
+  .table-fixed tbody {
+    height: 210px;
+    overflow-y: none;
+    width: 100%;
+  }
+
+  ul.nav>li.overview,
+  ul.nav>li.new-entry,
+  ul.nav>li.reports,
+  ul.nav>li.settings,
+  ul.nav>li.active {
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+  }
+
+  li.main {
+    width: 100%;
+    margin-top: 5px;
+  }
 }
