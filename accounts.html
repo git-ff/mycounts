@@ -2,25 +2,17 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accounts | MyCounts</title>
+  <title>Accounts  |  MyCounts</title>
 
 
   <!-- Loading Bootstrap -->
   <link href="assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Loading Flat UI -->
   <link href="assets/css/flat-ui.min.css" rel="stylesheet">
-
-  <!-- Loading Main style -->
+  <!-- Loading main style -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Loading FlatUI Checkbox Fix style -->
-  <link href="assets/css/flatui_checkbox_fix.css" rel="stylesheet">
-
-  <!-- Loading Vertical-center CSS -->
-  <link href="assets/css/vertical-center.css" rel="stylesheet">
-
 
   <link rel="shortcut icon" href="assets/img/favicon.ico">
 
@@ -30,100 +22,90 @@
     <script src="js/vendor/respond.min.js"></script>
   <![endif]-->
 </head>
+
 <body>
 
   <main>
 
-    <div class="vertical-center">
-
-      <!-- BEGIN Main container -->
-      <div class="container">
-        <div class="row" >
-
-          <!-- BEGIN LEFT COLUMN -->
-          <div class="left-column"></div><!-- END LEFT COLUMN -->
-
-          <!-- BEGIN CENTER COLUMN -->
-          <div class="center-block center-column" >
-            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-
-              <header>
-              </header>
-
-              <section>
-                <!-- BEGIN panel -->
-                <div class="panel panel-default">
-                  <div class="panel-body">
-
-                    <form class="form-inline" role="account_list_management">
-                      <!-- BEGIN form-group -->
-                      <div class="form-group add_account">
-                        <input type="text" class="form-control input-lg no-border" placeholder="Укажите название счёта">
-                        <button class="btn btn-primary btn-lg pull-right btn-mobile-100" type="submit">Добавить</button>
-                      </div><!-- END form-group -->
-                    </form>
-
-                    <div class="clearfix"></div>
-
-                    <div class="accounts">
-                      <div class="account_holder">
-                        <a class="select_account" href="#">
-                          <div class="account_name"><p>Тинькофф USD</p></div>
-                        </a>
-                        <div class="account_placeholder">&nbsp;</div>
-                        <div class="delete_acc">
-                          <button type="button" class="btn btn-primary btn-circle"><i class="glyphicon glyphicon-trash"></i></button>
-                        </div>   
-                      </div>
-
-                      <div class="account_holder">
-                        <a class="select_account" href="#">
-                          <div class="account_name"><p>Тинькофф RUB</p></div>
-                        </a>
-                        <div class="account_placeholder">&nbsp;</div>
-                        <div class="delete_acc">
-                          <button type="button" class="btn btn-primary btn-circle"><i class="glyphicon glyphicon-trash"></i></button>
-                        </div>  
-                      </div>
-
-                      <div class="account_holder">
-                        <a class="select_account" href="#">
-                          <div class="account_name"><p>Альфабанк USD</p></div>
-                        </a>
-                        <div class="account_placeholder">&nbsp;</div>
-                        <div class="delete_acc">
-                          <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                        </div>
-                      </div>
-
-                      <div class="account_holder">
-                        <a class="select_account" href="#">
-                          <div class="account_name"><p>Альфабанк RUB</p></div>
-                        </a>
-                        <div class="account_placeholder">&nbsp;</div>
-                        <div class="delete_acc"> 
-                          <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                        </div>  
-                      </div>
-
-                    </div><!-- END accounts -->
-
-                  </div><!-- END panel-body -->
-                </div><!-- END panel -->
-
-              </section>
-            </div><!-- END center-block -->
-          </div><!-- END CENTER COLUMN -->
 
 
-          <!-- BEGIN RIGHT COLUMN -->
-          <div class="right-column"></div><!-- END RIGHT COLUMN --> 
+    <!-- BEGIN Main container -->
+    <div class="container">
+      <div class="row" >
+
+        <!-- BEGIN CENTER COLUMN -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 child">
+          <header>
+          </header>
+
+          <!-- BEGIN panel -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+              <form class="form-inline" role="account_list_management">
+                <!-- BEGIN form-group -->
+                <div class="form-group add_account">
+                  <input type="text" class="form-control input-lg flat" placeholder="Укажите название счёта" autofocus>
+                  <button class="btn btn-primary btn-lg btn-block hidden-sm hidden-md hidden-lg" type="submit">Добавить</button>
+                  <button class="btn btn-primary btn-lg pull-right hidden-xs" type="submit">Добавить</button>
+                </div><!-- END form-group -->
+              </form>
+
+              <div class="accounts">
+
+                <div class="account_holder">
+                  <a class="select_account" href="#">
+                    <div class="account_name"><p>Тинькофф USD</p></div>
+                  </a>
+                  <div class="account_placeholder">&nbsp;</div>
+                  <div class="delete_acc pull-right">
+                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                  </div>   
+                </div>
+
+                <div class="account_holder">
+                  <a class="select_account" href="#">
+                    <div class="account_name"><p>Тинькофф RUB</p></div>
+                  </a>
+                  <div class="account_placeholder">&nbsp;</div>
+                  <div class="delete_acc pull-right">
+                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                  </div>  
+                </div>
+
+                <div class="account_holder">
+                  <a class="select_account" href="#">
+                    <div class="account_name"><p>Альфабанк USD</p></div>
+                  </a>
+                  <div class="account_placeholder">&nbsp;</div>
+                  <div class="delete_acc pull-right">
+                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                  </div>
+                </div>
+
+                <div class="account_holder">
+                  <a class="select_account" href="#">
+                    <div class="account_name"><p>Альфабанк RUB</p></div>
+                  </a>
+                  <div class="account_placeholder">&nbsp;</div>
+                  <div class="delete_acc pull-right"> 
+                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                  </div>  
+                </div>
+
+              </div><!-- END accounts -->
+
+            </div><!-- END panel-body -->
+          </div><!-- END panel -->
 
 
-        </div><!-- END row -->
+        </div><!-- END CENTER COLUMN -->
 
-      </div><!-- END Main container -->
-    </div><!-- END vertical-center --> 
+
+      </div><!-- END row -->
+
+    </div><!-- END Main container -->
+
 
 
   </main>
@@ -134,10 +116,12 @@
 
   <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
   <script src="assets/js/vendor/jquery.min.js"></script>
+
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/vendor/video.js"></script>
   <script src="assets/js/flat-ui.min.js"></script>
-
+  <script src="assets/js/application.js"></script>
 
 </body>
 </html>

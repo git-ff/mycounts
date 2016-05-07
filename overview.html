@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Overview | MyCounts</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Loading Bootstrap -->
   <link href="assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Loading Flat UI -->
   <link href="assets/css/flat-ui.min.css" rel="stylesheet">
-
-  <!-- Loading Main style -->
+  <!-- Loading main style -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Loading FlatUI Checkbox Fix style -->
-  <link href="assets/css/flatui_checkbox_fix.css" rel="stylesheet">
-
-  <!-- Loading Vertical-center CSS -->
-  <link href="assets/css/vertical-center.css" rel="stylesheet">
-
 
   <link rel="shortcut icon" href="assets/img/favicon.ico">
 
@@ -29,455 +21,451 @@
     <script src="js/vendor/respond.min.js"></script>
   <![endif]-->
 </head>
-<body>
-  <div class="container-fluid">
+
+<body>    
+  <div class="container"> 
     <div class="row">
 
-
-
-
-      <header>
+      <header class="text-center">
       </header>
 
-      <!-- BEGIN NAVIGATION BAR -->
-      <div class="col-lg-12">
-        <nav class="navbar navbar-tabs text-centered">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">MyCounts</a>
-          </div><!-- END navbar-header -->
+      <nav class="navbar navbar-tabs text-center">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MyCounts</a>
+        </div><!-- END navbar-header -->
 
-          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- END NAVBUTTON -->
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- END NAVBUTTON -->
 
-          <!-- BEGIN CONTAINER -->
-          <div class="container">
-            <!-- BEGIN MENU ITEMS -->
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-              <ul class="nav nav-tabs nav-tabs-collapse">
-                <li class="active main"><a href="#">Обзор</a></li>
-                <li class="main"><a href="#">Новая запись</a></li>
-                <li class="main"><a href="#">Отчёты</a></li>
-                <li class="main"><a href="#">Настройки</a></li>
-                <li class="main"><a href="#">Выход</a></li>
-              </ul>
-            </div><!-- END MENU ITEMS -->
-          </div><!-- END CONTAINER -->
-        </nav><!-- END NAVIGATION BAR -->
-      </div><!-- END col -->
+        <!-- BEGIN MENU ITEMS -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav nav-tabs nav-tabs-collapse nav-justified">
+            <li class="active main"><a href="#">Обзор</a></li>
+            <li class="main"><a href="#">Новая запись</a></li>
+            <li class="main"><a href="#">Отчёты</a></li>
+            <li class="main"><a href="#">Настройки</a></li>
+            <li class="main"><a href="#">Выход</a></li>
+          </ul>
+        </div><!-- END MENU ITEMS -->
+      </nav><!-- END NAVIGATION BAR -->
+
 
       <main>
-        <div class="container">
-          <div class="row">
-            <!-- BEGIN info and savings part -->
-            <div class="row">
-              <!-- BEGIN info part -->
-              <div class="col-lg-8">
-                <div class="panel panel-default">
-                  <div class="panel-heading text-centered">
-                    <h6>
-                      Информация на <span>25.04.2016</span>                   
-                    </h6>
-                  </div>
-                  <table class="table table-fixed table-condensed">
-                    <thead>
-                      <tr>
-                        <th class="col-xs-8 col-sm-4 col-md-4 col-lg-4">Счёт</th>
-                        <th class="col-xs-4 col-sm-2 col-md-2 col-lg-2 text-right">Остаток</th>
-                        <th class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right">Неделя</th>
-                        <th class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right">Месяц</th>
-                        <th class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right">Год</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="col-xs-8 col-sm-4 col-md-4 col-lg-4 acc-name">Альфабанк RUB</td>
-                        <td class="col-xs-4 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="negative">- 7 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
-                      </tr>
+        <!-- BEGIN info part -->
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <h6>
+                Информация на <span>25.04.2016</span>                   
+              </h6>
+            </div><!-- END panel-heading -->
+            <div class="panel-body">
+              <table class="table table-condensed table-responsive table-hover">
+                <thead>
+                  <tr>
+                    <th class="col-xs-7 col-sm-4 col-md-4 col-lg-4">Счёт</th>
+                    <th class="col-xs-5 col-sm-2 col-md-2 col-lg-2 text-right">Остаток</th>
+                    <th class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right">Неделя</th>
+                    <th class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right">Месяц</th>
+                    <th class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right">Год</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-xs-7 col-sm-4 col-md-4 col-lg-4 acc-name">Альфабанк RUB</td>
+                    <td class="col-xs-5 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span >- 7 000-00</span></td>
+                    <td class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
+                  </tr>
 
-                      <tr>
-                        <td class="col-xs-8 col-sm-4 col-md-4 col-lg-4 acc-name">Альфабанк USD</td>
-                        <td class="col-xs-4 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="negative">- 7 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
-                      </tr>
+                  <tr>
+                    <td class="col-xs-7 col-sm-4 col-md-4 col-lg-4 acc-name">Альфабанк USD</td>
+                    <td class="col-xs-5 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span >- 7 000-00</span></td>
+                    <td class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
+                  </tr>
 
-                      <tr>
-                        <td class="col-xs-8 col-sm-4 col-md-4 col-lg-4 acc-name">Тинькофф RUB</td>
-                        <td class="col-xs-4 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="negative">- 7 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
-                      </tr>
+                  <tr>
+                    <td class="col-xs-7 col-sm-4 col-md-4 col-lg-4 acc-name">Тинькофф RUB</td>
+                    <td class="col-xs-5 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span >- 7 000-00</span></td>
+                    <td class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
+                  </tr>
 
-                      <tr>
-                        <td class="col-xs-8 col-sm-4 col-md-4 col-lg-4 acc-name">Тинькофф USD</td>
-                        <td class="col-xs-4 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="negative">- 7 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
-                      </tr>
+                  <tr>
+                    <td class="col-xs-7 col-sm-4 col-md-4 col-lg-4 acc-name">Тинькофф USD</td>
+                    <td class="col-xs-5 col-sm-2 col-md-2 col-lg-2 text-right"><span class="balance">10 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span class="positive">+ 3 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 text-right"><span >- 7 000-00</span></td>
+                    <td class="hidden-xs hidden-sm col-md-2 col-lg-2 text-right"><span class="positive">+ 9 000-00</span></td>
+                  </tr>
+                </tbody>
 
-                      <tr>
-                        <td class="col-xs-8 col-sm-4 col-md-4 col-lg-4 summary">Итого</td>
-                        <td class="col-xs-4 col-sm-2 col-md-2 col-lg-2 summary text-right"><span class="balance">40 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 summary text-right"><span class="positive">+ 12 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 summary text-right"><span class="negative">- 28 000-00</span></td>
-                        <td class="hidden-xs col-sm-2 col-md-2 col-lg-2 summary text-right"><span class="positive">+ 36 000-00</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- END panel -->
-              </div><!-- END col --><!-- END info part -->
+                <tfoot>
+                  <tr>
+                    <td class="col-xs-7 col-sm-4 col-md-4 col-lg-4 summary">Итого</td>
+                    <td class="col-xs-5 col-sm-2 col-md-2 col-lg-2 summary text-right"><span class="balance">40 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 summary text-right"><span class="positive">+ 12 000-00</span></td>
+                    <td class="hidden-xs col-sm-3 col-md-2 col-lg-2 summary text-right"><span >- 28 000-00</span></td>
+                    <td class="hidden-xs hidden-sm col-md-2 col-lg-2 summary text-right"><span class="positive">+ 36 000-00</span></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div><!-- panel-body -->
+          </div><!-- END panel -->
+        </div><!-- END col --><!-- END info part -->
 
-              <!-- BEGIN savings part -->
-              <div class="col-lg-4">
-                <div class="panel panel-default">
-                  <div class="panel-heading text-centered">
-                    <h6>
-                      <span>Цели накопления</span>
-                    </h6>
-                  </div>
-                  <table class="table table-fixed table-condensed">
-                    <thead>
-                      <tr>
-                        <th class="col-xs-6 col-sm-8 col-md-6 col-lg-6">Цель</th><!-- left part -->
-                        <th class="col-xs-6 col-sm-4 col-md-6 col-lg-6 text-centered">Прогресс</th><!-- right part -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6 goal-name"><!-- left part -->
-                          Квартира
-                        </td>
-                        <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-centered"><!-- right part -->
-                          <div class="progress goal-progressbar-holder">
-                            <div class="progress-bar progress-bar-success progressbar-goal-done" role="progressbar" style="width: 39%";>
-                              <span>39%</span>
-                            </div>
-                            <div class="progress-bar progress-bar-danger progressbar-goal-remain" role="progressbar" style="width: 61%";>
-                              <span>61%</span>
-                            </div>
-                          </div><!-- END goal-progressbar-holder -->
-
-                          <div class="progress goal-progressbar-holder">
-                            <div class="progress-bar progress-bar-success progressbar-goal-descr" role="progressbar" style="width: 100%";>
-                              <span>1 000 000</span> из <span>2 564 102</span>
-                            </div>
-                          </div><!-- END goal-progressbar-holder -->
-
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- END panel -->
-              </div><!-- END col --><!-- END savings part -->
-            </div><!-- END row --><!-- END info and savings part -->
-
-            <!-- BEGIN top and loans part -->
-            <div class="row">
-              <!-- BEGIN top-3 part -->
-              <div class="col-lg-8">
-                <!-- BEGIN top-3 year part -->
-                <div class="row">
-                  <!-- BEGIN top-3 year income part -->
-                  <div class="col-md-6 col-lg-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading text-centered">
-                        <h6>
-                          Топ-3 доходов за год                   
-                        </h6>
-                      </div>
-
-                      <table class="table table-condensed">
-                        <thead>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Зарплата
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              80%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              10 000-00
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Бонус
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Нашёл
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
-
-                        </tbody>
-                      </table>
-
-                    </div><!-- END panel -->
-                  </div><!-- END top-3 year income part -->
-
-                  <!-- BEGIN top-3 year expense part -->
-                  <div class="col-md-6 col-lg-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading text-centered">
-                        <h6>
-                          Топ-3 расходов за год                   
-                        </h6>
-                      </div>
+        <!-- BEGIN savings part -->
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <h6>
+                Цели на <span>25.04.2016</span>                   
+              </h6>
+            </div><!-- END panel-heading -->
+            <div class="panel-body">
+              <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Цель</th>
+                    <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">Прогресс</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><span class="goal_name_short">Квартира </span><i class="glyphicon glyphicon-info-sign" data-toggle="popover" data-placement="top" tabindex="0" data-trigger="focus" title="<h6>Цель: 1 000 000 руб.</h6>" data-content="Накоплено: 350 000 руб."></i>
+                    </td>
+                    <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+                      <a href="#">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+                            <span>
+                              35%
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- END panel-body -->
+          </div><!-- END panel -->
+        </div><!-- END col --><!-- END savings part -->
 
 
-                      <table class="table table-condensed">
-                        <thead>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Квартплата
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              80%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              10 000-00
-                            </td>
-                          </tr>
 
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Еда
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
+        <!-- BEGIN top-3 part -->
+        <!-- BEGIN top-3 part -->
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+          <!-- BEGIN top-3 year part -->
 
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Потерял
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
+          <!-- BEGIN top-3 year income part -->
 
-                        </tbody>
-                      </table>
+          <div class="panel panel-default col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel-heading text-center">
+              <h6>
+                Топ-3 доходов за год                   
+              </h6>
+            </div>
 
-                    </div><!-- END panel -->
-                  </div><!-- END top-3 year expense part -->
-                </div><!-- END top-3 year part -->
+            <table class="table table-condensed table-hover">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Зарплата
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    80%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    10 000-00
+                  </td>
+                </tr>
 
-                <!-- BEGIN top-3 month part -->
-                <div class="row">
-                  <!-- BEGIN top-3 month income part -->
-                  <div class="col-md-6 col-lg-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading text-centered">
-                        <h6>
-                          Топ-3 доходов за месяц                   
-                        </h6>
-                      </div>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Бонус
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
 
-                      <table class="table table-condensed">
-                        <thead>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Зарплата
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              80%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              10 000-00
-                            </td>
-                          </tr>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Нашёл
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
 
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Бонус
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
+              </tbody>
+            </table>
 
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Нашёл
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
+          </div><!-- END panel -->
 
-                        </tbody>
-                      </table>
 
-                    </div><!-- END panel -->
-                  </div><!-- END top-3 month income part -->
+          <!-- BEGIN top-3 year expense part -->
 
-                  <!-- BEGIN top-3 month expense part -->
-                  <div class="col-md-6 col-lg-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading text-centered">
-                        <h6>
-                          Топ-3 расходов за месяц                   
-                        </h6>
-                      </div>
+          <div class="panel panel-default col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel-heading text-center">
+              <h6>
+                Топ-3 расходов за год                   
+              </h6>
+            </div>
 
-                      <table class="table table-condensed">
-                        <thead>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Квартплата
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              80%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              10 000-00
-                            </td>
-                          </tr>
 
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Еда
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
+            <table class="table table-condensed table-hover">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Квартплата
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    80%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    10 000-00
+                  </td>
+                </tr>
 
-                          <tr>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
-                              Потерял
-                            </td>
-                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
-                              10%
-                            </td>
-                            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
-                              1 000-00
-                            </td>
-                          </tr>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Еда
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
 
-                        </tbody>
-                      </table>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Потерял
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
 
-                    </div><!-- END panel -->
-                  </div><!-- END top-3 month expense part -->
-                </div><!-- END top-3 month part -->
-              </div><!-- END top-3 part -->
+              </tbody>
+            </table>
 
-              <div class="col-lg-4">
-                <div class="panel panel-default">
-                  <div class="panel-heading text-centered">
-                    <h6>
-                      <span>Задолженность</span>
-                    </h6>
-                  </div>
-                  <table class="table table-condensed">
-                    <thead>
-                      <tr>
-                        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
-                          <span class="positive">Кто</span> / <span class="negative">Кому</span>
-                        </th><!-- left part -->
-                        <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Срок до</th><!-- middle part -->
-                        <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                          <span class="positive">Артём</span>
-                        </td>
-                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                          <span class="positive">11.05.2016</span><i class="glyphicon glyphicon-info-sign glyphicon-gray"></i>
-                        </td><!-- middle part -->
-                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                          <span class="positive">2 000 р.</span>
-                        </td><!-- right part -->
-                      </tr>
+          </div><!-- END panel -->
 
-                      <tr>
-                        <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                          <span class="negative">Сергей</span>
-                        </td>
-                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                          <span class="negative">11.05.2016</span><i class="glyphicon glyphicon-info-sign glyphicon-gray"></i>
-                        </td> <!-- middle part -->
-                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                          <span class="negative">2 000 р.</span>
-                        </td><!-- right part -->
-                      </tr>
 
-                    </tbody>
-                  </table>
-                </div><!-- END panel -->
-              </div><!-- END col --><!-- END savings part -->
 
-            </div><!-- END top and loans part -->
+          <!-- BEGIN top-3 month part -->
+          <!-- BEGIN top-3 month income part -->
 
-          </div><!-- END row -->
-        </div><!-- END container -->
+          <div class="panel panel-default col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel-heading text-center">
+              <h6>
+                Топ-3 доходов за месяц                   
+              </h6>
+            </div>
+
+            <table class="table table-condensed table-hover">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Зарплата
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    80%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    10 000-00
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Бонус
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Нашёл
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div><!-- END panel -->
+
+
+          <!-- BEGIN top-3 month expense part -->
+
+          <div class="panel panel-default col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel-heading text-center">
+              <h6>
+                Топ-3 расходов за месяц                   
+              </h6>
+            </div>
+
+            <table class="table table-condensed table-hover">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Квартплата
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    80%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    10 000-00
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Еда
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 item-name">
+                    Потерял
+                  </td>
+                  <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
+                    10%
+                  </td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                    1 000-00
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div><!-- END panel -->
+
+        </div><!-- END top-3 part -->
+
+        <!-- BEGIN loans part -->
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <h6>
+                <span>Задолженность</span>
+              </h6>
+            </div>
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+                    <span class="positive">Кто</span> / <span >Кому</span>
+                  </th><!-- left part -->
+                  <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Срок до</th><!-- middle part -->
+                  <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="positive">
+                  <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
+                    <span>Артём</span>
+                  </td>
+                  <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                    <span>11.05.2016</span><i class="glyphicon glyphicon-info-sign" data-toggle="popover" data-placement="top" tabindex="1" data-trigger="focus" title="<h6>Срок:<br> 01.01.2016-11.06.2017</h6>" data-content="Условия: 35% годовых"></i>
+                  </td><!-- middle part -->
+                  <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                    <span>2 000 р.</span>
+                  </td><!-- right part -->
+                </tr>
+
+                <tr class="negative">
+                  <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
+                    <span>Сергей</span>
+                  </td>
+                  <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                    <span>11.05.2016</span><i class="glyphicon glyphicon-info-sign" data-toggle="popover" data-placement="top" tabindex="1" data-trigger="focus" title="<h6>Срок:<br> 01.01.2016-11.06.2017</h6>" data-content="Условия: 35% годовых"></i>
+                  </td> <!-- middle part -->
+                  <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                    <span>2 000 р.</span>
+                  </td><!-- right part -->
+                </tr>
+
+              </tbody>
+            </table>
+          </div><!-- END panel -->
+        </div><!-- END loans part -->
+
+
       </main>
 
       <footer>
       </footer>
-      
+
+
     </div><!-- END row -->
   </div><!-- END container -->
 
   <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
   <script src="assets/js/vendor/jquery.min.js"></script>
+
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/vendor/video.js"></script>
   <script src="assets/js/flat-ui.min.js"></script>
+  <script src="assets/js/application.js"></script>
+<!-- Init popover -->
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({html:'true'})
+  })
+</script>
+
 
 </body>
+
 </html>

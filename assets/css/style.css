@@ -1,355 +1,242 @@
-body {
-  background-color: #422626;
+.parent {
+  position: relative;
 }
 
-.text-centered {
-  text-align: center !important;
-}
-
-.no-margin {
-  margin: none !important;
-}
-
-.no-border {
-  border: none !important;
-}
-
-.no-radius {
-  border-radius: 0 !important;
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
-
-
-
-
-/*begin logo align*/
-.navbar-header {
-  float: left;
-  padding: 15px;
-  text-align: center;
-  width: 100%;
-}
-
-.navbar-brand {
-  float:none;
-}
-/*end logo align*/
-
-.nav,
-.navbar-default {
-  margin-bottom: 0;
-  border-radius: 0;
-}
-
-ul.nav>li.log-in,
-ul.nav>li.active,
-ul.nav-tabs>li.registration {
-  width: 50%;
-  border: none;
+.page-header {
+  border-bottom: 0;
 }
 
 
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:hover,
-.nav-tabs>li.active>a:focus {
-  background-color: #B38193;
-  border: none;
-}
-
-
-/* START MAIN NAV MENU */
-ul.nav>li.overview,
-ul.nav>li.new-entry,
-ul.nav>li.reports,
-ul.nav>li.settings,
-ul.nav>li.active {
-  width: 20%;
-  border: none;
-}
-
-li.main {
-  width: 20%;
-}
-
-/* END MAIN NAV MENU */
-
-
-.login-form {
-  margin-top: -33px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  background-color: #B38193;
-}
-
-
-
-.tab-pane {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.placeholder {
-  margin-top: 15px;
-  padding-bottom: 22px;
-  height: 13px;
-}
-
-label {
-  margin-top: 5px;
-  margin-bottom: 15px;
-  margin-right: 5px;
-}
-
-
-.center-column {
-  max-width: 500px;
-}
-
-
-
-.panel-body {
-  background-color:  #B38193!important;
+.navbar,
+.navbar-tabs{
+  margin-bottom: 0px;
 }
 
 .add_account {
-  width: 100% !important;  
-}
-
-.account_holder {
-  height: 53px;
   width: 100%;
+}
+
+.add_account>input,
+.add_goal_name>input{
+ padding-left: 0;
+}
+
+.account_holder,
+.goal_holder {
+  width: 100%;
+  height: 35px;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.account_name,
+.account_placeholder,
+.delete_acc,
+.goal_name_input,
+.goal_date_input,
+.goal_amount_input,
+.goal_name,
+.goal_date,
+.goal_amount,
+.delete_goal {
+  display: inline-block;
   float:left;
-  border-top:1px solid black;
-  margin-top: 5px;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  border-radius: 6px;
-  background-color: #90C3D4;
-}
-
-.account_holder a.select_account {
- color: #6E6E6E;
-}
-
-.account_holder a.select_account:hover {
- color: #4A4A4A;
 }
 
 .account_name {
- width: 75%;
- height: inherit;
- float:left;
- font-weight: 700;
- font-size: 18px;
+ width: 85%;
  text-align: left;
- padding-left: 15px;
- padding-top: 10px;
 }
 
 .account_placeholder {
   width: 5%;
-  height: inherit;
-  float:left;
 }
 
 .delete_acc {
-  width: 20%;
-  height: inherit;
+  width: 10%;
   float:left;
   text-align: center;
-  padding-top: 5px;
-  padding-right: 5px;
-  text-align: right;
 }
 
-.delete_acc>i.glyphicon.glyphicon-trash {
-  padding-top: 10px;
-  padding-right: 11px;
+.account_name p,
+.account_placeholder,
+.delete_acc i,
+.goal_name p,
+.goal_date p,
+.goal_amount p,
+.delete_goal i {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
 }
 
-.delete_acc>i.glyphicon.glyphicon-trash:hover {
+.delete_acc i:hover,
+.delete_goal i:hover{
   color: red;
 }
 
 
-.btn-primary.btn-circle {
-  border-radius: 50%;
-  background-color: #ffffff;
-  color: black;
-  padding: 10px 12px;
-  margin-top: 1px;
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #B5EDFF;
 }
 
-.btn-primary.btn-circle:hover {
-  border-radius: 50%;
-  background-color: #ff0000;
-  color: white;
-  padding: 10px 12px;
-  margin-top: 1px;
+.progress {
+  margin-bottom: 0;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: 3px;
 }
 
-
-
-.form-control.input-lg.no-border{
-  margin-right: 5px;
-  width: 65%;
+.progress-bar {
+  line-height: 20px;
 }
 
-.button-holder {
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
+.negative span {
+  color: red;
 }
 
-.form_input_holder {
-  width: 100%;
-  display: inline-block;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.row_input_holder {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.panel-heading h2 {
-  text-align: center;
-}
-
-
-
-
-
-
-/*TABLE INFO BEGIN*/
-.acc-name,
-.balance {
-font-weight: 600;
-}
-
-.positive {
+.positive span {
   color: green;
 }
 
-.negative {
-color: red;
-}
-
-.table-fixed tbody td.summary {
-font-weight: 800;
-}
-
-/*TABLE - SCROLL START */
-.table-fixed thead {
-  width: 100%;
-}
-
-.table-fixed tbody {
-  height: 210px;
-  overflow-y: auto;
-  width: 100%;
-}
-
-.table-fixed thead, .table-fixed tbody, .table-fixed tfoot, .table-fixed tr, .table-fixed td, .table-fixed th {
-  display: block;
-}
-
-.table-fixed tbody td, .table-fixed thead > tr> th {
-  float: left;
-  border-bottom-width: 0;
-}
-/*TABLE - SCROLL END*/
-/*TABLE INFO END*/
-
-
-.goal-progressbar-holder {
-height: 25px;
-border-radius: 0;
-min-width: 2em;
-margin-bottom: 2px;
-}
-
-.goal-name,
-.item-name {
-  font-weight: 600;
-}
-
-.progressbar-goal-done,
-.progressbar-goal-remain,
-.progressbar-goal-descr{
-    float: left;
-    width: 0;
-    height: 100%;
-    font-size: 14px;
-    line-height: 25px;
-    color: #fff;
+.summary {
+  font-weight: 700;
 }
 
 
-.glyphicon-gray, .glyphicon-gray a {
-  color: gray;
+
+
+
+.add_account>.form-control.input-lg.flat{
+  width: 85%;
+  margin-right: 5px;
+}
+
+.add_accounts>.form-control.input-lg.flat{
+  width: 80%;
+  margin-right: 5px;
+}
+
+.add_goal>.form-control.input-lg.flat.goal_name_input {
+  width: 40%;
+  margin-right: 5px;
+  padding-left: 0;
 }
 
 
-@media (max-width: 767px) {
-  .center-column {
-    min-width: 300px;
+.add_goal>.form-control.input-lg.flat.goal_amount_input,
+.add_goal>.form-control.input-lg.flat.goal_date_input {
+  width: 20%;
+  margin-right: 5px;
+}
+
+.goal_name {
+  width: 40%;
+  margin-right: 5px;
+  padding-left: 0;
+}
+
+.goal_amount,
+.goal_date {
+ width: 20%;
+ margin-right: 5px;
+}
+
+.delete_goal {
+  width: 10%;
+  float:left;
+  text-align: center;
+}
+
+.border_bottom {
+  border-bottom: 1px solid black;
+}
+
+
+
+@media(max-width: 1199px) {
+  .add_account>.form-control.input-lg.flat{
+    width: 75%;
   }
 
-  .account_name {
-    width: 85%;
+  .add_goal>.form-control.input-lg.flat.goal_name_input {
+    width: 30%;
   }
 
-  .account_placeholder {
+  .add_goal>.form-control.input-lg.flat.goal_amount_input,
+  .add_goal>.form-control.input-lg.flat.goal_date_input {
+    width: 25%;
+  }
+
+  .goal_name {
+    width: 30%;
+  }
+
+  .goal_amount,
+  .goal_date {
+    width: 25%;
+  }
+
+
+  .delete_goal {
+    width: 10%;
+  }
+}
+
+
+@media(max-width: 767px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .add_account>input{
+    width: 100% !important;
+    margin-bottom: 5px;
+  }
+
+  .account_name{
+    width: 80%;
+  }
+
+  .account_placeholder{
     width: 1%;
   }
 
   .delete_acc {
-    width: 14%;
+    width: 19%;
   }
 
-  .btn-mobile-100 {
-    width: 100%;
-    margin-top: 5px;
+  .navbar-header {
     margin-bottom: 5px;
   }
 
-  .form-control.input-lg.no-border{
+  .navbar-brand {
+    font-size: 2.5em;
+    float: inherit;
+  }
+
+  .add_goal>input{
     width: 100% !important;
+    margin-bottom: 5px;
+    padding-left: 0;
   }
 
-  .panel-heading h2 {
-    font-size: 37px;
-  }
-
-  .form_input_holder {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .table-fixed tbody {
-    height: 210px;
-    overflow-y: none;
-    width: 100%;
-  }
-
-  ul.nav>li.overview,
-  ul.nav>li.new-entry,
-  ul.nav>li.reports,
-  ul.nav>li.settings,
-  ul.nav>li.active {
-    width: 100%;
-    border: none;
-    margin-top: 5px;
-  }
-
-  li.main {
-    width: 100%;
-    margin-top: 5px;
+  .goal_name,
+  .goal_amount,
+  .goal_date,
+  .delete_goal {
+    width: 45%;
+    display: inline-block;
+    text-align: center;
   }
 }
-
-

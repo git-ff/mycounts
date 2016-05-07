@@ -3,33 +3,23 @@
 <head>
 <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Outcoming | MyCounts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Loading Bootstrap -->
-    <link href="assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loading Bootstrap -->
+  <link href="assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loading Flat UI -->
+  <link href="assets/css/flat-ui.min.css" rel="stylesheet">
+  <!-- Loading main style -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Loading Flat UI -->
-    <link href="assets/css/flat-ui.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-    <!-- Loading Main style -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- Loading FlatUI Checkbox Fix style -->
-    <link href="assets/css/flatui_checkbox_fix.css" rel="stylesheet">
-
-    <!-- Loading Vertical-center CSS -->
-    <link href="assets/css/vertical-center.css" rel="stylesheet">
-
-
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
-
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -37,78 +27,72 @@
   </header>
 
   <main>
-    <div class="container-fluid"> 
+    <div class="container"> 
       <div class="row">
-        <!-- Left column -->
-        <div class="col-xs-hidden col-sm-hidden col-md-hidden col-lg-1">
-        </div><!-- END Left column -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 child">
+          <!-- BEGIN panel -->
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h2>Добавить расход</h2>
+            </div><!-- END panel-heading -->
 
-        <!-- BEGIN wrapper -->
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
-          <div class="wrapper vertical-center">
+            <div class="panel-body">
+              <!-- BEGIN form outcoming -->
+              <form class="form outcoming_form" role="form">
 
-            <!-- BEGIN panel -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2>Добавить расход</h2>
-              </div><!-- END panel-heading -->
-              <div class="panel-body">
+                <div class="form-group col-lg-8">
+                 <label class="sr-only" for="outcoming_description">Наименование расхода</label>
+                 <input type="text" class="form-control outcoming_description" placeholder="Наименование расхода" id="outcoming_description" autocomplete="on" autofocus>
+               </div><!-- END form-group -->
 
-                <!-- BEGIN form outcoming -->
-                <form class="form-inline" role="form">
-                  <div class="form-group">
+               <div class="form-group col-lg-4">
+                 <label class="sr-only" for="outcoming_amount">Сумма расхода</label>
+                 <input type="number" class="form-control outcoming_amount" id="outcoming_amount" step='0.01' placeholder="Сумма" min="0.00" max="99999999.99">
+               </div><!-- END form-group -->
 
-                  <div class="row row_input_holder">
-                      <div class="form_input_holder">
-                      <input type="text" class="form-control outcoming_description" placeholder="Наименование расхода" autocomplete="on">
-                      
-                      <input type="number" class="form-control outcoming_amount" placeholder="Сумма" min="0" max="99999999">
-                      
-                      <input type="date" class="form-control outcoming_date" id="outcoming_date" min="2014-01-01" max="2030-12-31">
-                      <!-- BEGIN select_account -->
-                      <select class="form-control select_account_outcoming" id="select_account">
-                        <option>4010-Сбербанк</option>
-                        <option>2030-Альфабанк</option>
-                        <option>Наличные</option>
-                      </select><!-- END select_account -->
-                      </div><!-- END form_input_holder -->
-                      <div class="clearfix"></div>
+               <div class="form-group col-lg-5 col-md-6 col-sm-6">
+                 <label class="sr-only" for="outcoming_date">Дата расхода</label>
+                 <input type="date" class="form-control outcoming_date" id="outcoming_date" min="2014-01-01" max="2030-12-31">
+               </div><!-- END form-group -->
 
-                      <!-- BEGIN button -->
-                      <div class="button-holder">
-                        <button class="btn btn-primary btn-lg btn-mobile-100" type="submit">
-                          Добавить
-                        </button>
-                      </div><!-- END button-holder -->
+               <div class="form-group col-lg-7 col-md-6 col-sm-6">
+                 <!-- BEGIN select_account -->
+                 <label class="sr-only" for="select_account">Счёт расхода</label>
+                 <select class="form-control select_account_outcoming" id="select_account">
+                  <option>4010-Сбербанк</option>
+                  <option>2030-Альфабанк</option>
+                  <option>Наличные</option>
+                </select><!-- END select_account -->
+              </div><!-- END form-group -->
+              <!-- BEGIN button -->
 
-                    </div> <!-- END row -->
-                  </div><!-- END form-group -->
-                </form><!-- END form outcoming -->
+              <br>
 
-              </div><!-- END panel-body -->
-            </div><!-- END panel -->
-          </div><!-- END wrapper --> 
-        </div>
+              <button class="btn btn-primary btn-lg btn-block btn-wide hidden-sm hidden-md hidden-lg" type="submit">Добавить</button>
+              <button class="btn btn-primary btn-lg btn-wide hidden-xs" type="submit">Добавить</button>
+              
+            </form><!-- END form outcoming -->
 
-        <!-- BEGIN Right column -->
-        <div class="col-xs-hidden col-sm-hidden col-md-hidden col-lg-1">
-        </div><!-- END Right column -->
+          </div><!-- END panel-body -->
+        </div><!-- END panel -->
+      </div><!-- END col -->
+    </div><!-- END row -->
+  </div><!-- END container -->
 
-      </div><!-- END row -->
-    </div><!-- END container-fluid -->
-
-  </main>
+</main>
 
   <footer>
   </footer>
 
+
   <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
   <script src="assets/js/vendor/jquery.min.js"></script>
+
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/vendor/video.js"></script>
   <script src="assets/js/flat-ui.min.js"></script>
-
-
+  <script src="assets/js/application.js"></script>
 
 </body>
 

@@ -2,24 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <title>SignIn / SignUp  |  MyCounts</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In/Register | MyCounts</title>
-  
+
   <!-- Loading Bootstrap -->
   <link href="assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Loading Flat UI -->
   <link href="assets/css/flat-ui.min.css" rel="stylesheet">
-
-  <!-- Loading Main style -->
+  <!-- Loading main style -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Loading FlatUI Checkbox Fix style -->
-  <link href="assets/css/flatui_checkbox_fix.css" rel="stylesheet">
-
-  <!-- Loading Vertical-center CSS -->
-  <link href="assets/css/vertical-center.css" rel="stylesheet">
-
 
   <link rel="shortcut icon" href="assets/img/favicon.ico">
 
@@ -29,139 +20,117 @@
     <script src="js/vendor/respond.min.js"></script>
   <![endif]-->
 </head>
+
 <body>
+  <div class="container">
+    <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 child text-center">
 
-  <main>
+        <header class="page-header">
+          <h1><a href="#">MyCounts</a></h1>
+        </header>
 
+        <nav class="navbar navbar-default" role="navigation">
+          <ul class="nav nav-tabs nav-justified">
+            <li class="log-in active"><a href="#login_pane" data-toggle="tab">Вход</a></li>
+            <li class="registration"><a href="#register" data-toggle="tab">Регистрация</a></li>
+          </ul>
 
-    <div class="vertical-center">
+        </nav> <!-- END navbar -->
+        <!-- END NAVIGATION -->
 
-      <!-- BEGIN Main container -->
-      <div class="container">
-        <div class="row">
+        
+        <div class="tab-content">
+          <!-- login_pane -->
+          <div class="tab-pane active" id="login_pane">
+            <!-- BEGIN login-form -->
+            <form action="#">
+              <div class="login-form">
+                <!-- BEGIN form-group login -->
+                <div class="form-group">
+                  <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name" />
+                  <label class="login-field-icon fui-user" for="login-name"></label>
+                </div><!-- END form-group login -->
 
-          <!-- BEGIN LEFT COLUMN -->
-          <div class="left-column"></div><!-- END LEFT COLUMN -->
+                <!-- BEGIN form-group password -->
+                <div class="form-group">
+                  <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
+                  <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div><!-- END form-group password -->
 
-          <!-- BEGIN CENTER COLUMN -->
-          <div class="center-block center-column" >
+                <!-- BEGIN checkbox_remember -->
+                <div class="bootstrap-switch-square">
+                  <input type="checkbox" data-toggle="switch" name="square-switch" id="switch-remember" />
+                  <label for="switch-remember">Запомнить </label><i class="glyphicon glyphicon-info-sign" data-toggle="popover" data-placement="bottom" tabindex="0" data-trigger="focus" title="<h6>Запомнить вход</h6>" data-content="На этом устройстве до очистки истории браузера или cookies"></i>
+                </div><!-- END checkbox_remember -->
 
-            <header>
-              <!-- BEGIN NAVIGATION -->
-              <nav class="navbar navbar-tabs text-centered">
+                <br>
 
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="#">MyCounts</a>
+                <button class="btn btn-primary btn-lg btn-block btn-wide hidden-sm hidden-md hidden-lg" type="submit">Войти</button>
+                <button class="btn btn-primary btn-lg btn-wide hidden-xs" type="submit">Войти</button>
 
-                </div><!-- END navbar-header -->
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#tab_a" data-toggle="tab">Вход</a></li>
-                  <li class="registration"><a href="#tab_b" data-toggle="tab">Регистрация</a></li>
-                </ul>
+                <a class="login-link" href="#">Вспомнить пароль</a>
+              </div><!-- END login-form -->
+            </form>
+          </div><!-- END tab-pane #login_pane -->
 
-              </nav> <!-- END navbar -->
-              <!-- END NAVIGATION -->
-            </header>
+          <!-- register -->
+          <div class="tab-pane" id="register">
+            <!-- BEGIN login-form-register -->
+            <form action="#">
+              <div class="login-form">
 
-            <section>
-              <div class="tab-content">
+                <!-- END login-register -->
+                <div class="form-group">
+                  <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name-register" />
+                  <label class="login-field-icon fui-user" for="login-name-register"></label>
+                </div><!-- END login-register  -->
 
-                <!-- tab_a -->
-                <div class="tab-pane active" id="tab_a">
-                  <!-- BEGIN login-form -->
-                  <form action="#">
-                    <div class="login-form">
-                      <!-- BEGIN form-group login -->
-                      <div class="form-group">
-                        <input type="text" class="form-control login-field" value="" placeholder="e-mail" id="login-name" />
-                        <label class="login-field-icon fui-user" for="login-name"></label>
-                      </div><!-- END form-group login -->
+                <!-- BEGIN password-register -->
+                <div class="form-group">
+                  <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass-register" />
+                  <label class="login-field-icon fui-lock" for="login-pass-register">
+                  </label>
+                </div><!-- END password-register -->
 
-                      <!-- BEGIN form-group password -->
-                      <div class="form-group">
-                        <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
-                        <label class="login-field-icon fui-lock" for="login-pass"></label>
-                      </div><!-- END form-group password -->
+                <!-- BEGIN checkbox_agree -->
+                <div class="bootstrap-switch-square">
+                  <input type="checkbox" data-toggle="switch" name="square-switch" id="switch-agree-register" />
+                  <label for="switch-agree-register">Принимаю <a href="#">правила</a>.</label>
+                </div><!-- END checkbox_agree -->
+                <br>
+                <button class="btn btn-primary btn-lg btn-block hidden-sm hidden-md hidden-lg" type="submit">Зарегистрироваться</button>
+                <button class="btn btn-primary btn-lg hidden-xs" type="submit">Зарегистрироваться</button>
+                <div class="login-link">&nbsp;</div>
+              </div><!-- END login-form -->
+            </form><!-- END login-form-register -->
+          </div><!-- END tab-pane #register -->
+        </div><!-- tab-content -->
+        
 
-                      <!-- BEGIN checkbox_remember -->
-                      <div class="input-group-checkbox">
-                        <input type="checkbox" id="checkbox_remember" />
-                        <label for="checkbox_remember">
-                          <span class="ui"></span>
-                          Запомнить
-                        </label>
-                        <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="На этом устройстве до очистки истории браузера или cookies" alt="На этом устройстве до очистки истории браузера или cookies"></i>
-                      </div><!-- END checkbox_remember -->
-
-                      <button class="btn btn-primary btn-lg btn-block" type="submit">Вход</button>
-
-                      <a class="login-link" href="#">Вспомнить пароль</a>
-                    </div><!-- END login-form -->
-                  </form>
-                </div><!-- END tab-pane #tab_a -->
-
-                <!-- tab_b -->
-                <div class="tab-pane" id="tab_b">
-                  <!-- BEGIN login-form-register -->
-                  <form action="#">
-                    <div class="login-form">
-
-                      <!-- END login-register -->
-                      <div class="form-group">
-                        <input type="text" class="form-control login-field" value="" placeholder="e-mail" id="login-name-register" />
-                        <label class="login-field-icon fui-user" for="login-name-register"></label>
-                      </div><!-- END login-register  -->
-
-                      <!-- BEGIN password-register -->
-                      <div class="form-group">
-                        <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass-register" />
-                        <label class="login-field-icon fui-lock" for="login-pass-register">
-                        </label>
-                      </div><!-- END password-register -->
-
-                      <!-- BEGIN checkbox_agree -->
-                      <div class="input-group-checkbox">
-                        <input type="checkbox" id="checkbox_agree" />
-                        <label for="checkbox_agree">
-                          <span class="ui"></span>
-                          Принимаю <a href="#">правила</a>.
-                        </label>
-                      </div><!-- END checkbox_remember -->
-
-                      <button class="btn btn-primary btn-lg btn-block" type="submit">Зарегистрироваться</button>
-                      <div class="placeholder"></div>
-
-                    </div>
-                  </form><!-- END login-form-register -->
-                </div><!-- END tab-pane #tab_b -->
-              </div><!-- tab-content -->
-
-            </section>
-          </div><!-- END CENTER COLUMN -->
+      </div><!-- END col -->
+    </div><!-- END row -->
+  </div><!-- END container -->
 
 
-          <!-- BEGIN RIGHT COLUMN -->
-          <div class="right-column"></div><!-- END RIGHT COLUMN --> 
 
 
-        </div><!-- END row -->
-
-      </div><!-- END Main container -->
-    </div><!-- END vertical-center --> 
-
-
-  </main>
-
-  <footer>
-  </footer>
 
 
   <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
   <script src="assets/js/vendor/jquery.min.js"></script>
+
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/vendor/video.js"></script>
   <script src="assets/js/flat-ui.min.js"></script>
+  <script src="assets/js/application.js"></script>
+  <!-- Init popover -->
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover({html:'true'})
+    })
+  </script>
 
 
 </body>
