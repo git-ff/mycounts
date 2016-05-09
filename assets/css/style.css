@@ -15,6 +15,9 @@
 }
 
 
+
+
+
 .navbar,
 .navbar-tabs{
   margin-bottom: 0px;
@@ -39,14 +42,7 @@
 
 .account_name,
 .account_placeholder,
-.delete_acc,
-.goal_name_input,
-.goal_date_input,
-.goal_amount_input,
-.goal_name,
-.goal_date,
-.goal_amount,
-.delete_goal {
+.delete_acc {
   display: inline-block;
   float:left;
 }
@@ -68,18 +64,13 @@
 
 .account_name p,
 .account_placeholder,
-.delete_acc i,
-.goal_name p,
-.goal_date p,
-.goal_amount p,
-.delete_goal i {
+.delete_acc i {
   vertical-align: middle;
   padding: 0;
   margin: 0;
 }
 
-.delete_acc i:hover,
-.delete_goal i:hover{
+.delete_acc i:hover {
   color: red;
 }
 
@@ -101,95 +92,39 @@
   line-height: 20px;
 }
 
-.negative span {
-  color: red;
-}
-
-.positive span {
-  color: green;
-}
-
 .summary {
   font-weight: 700;
 }
 
 
-
-
-
 .add_account>.form-control.input-lg.flat{
-  width: 85%;
+  width: 73%;
   margin-right: 5px;
 }
 
-.add_accounts>.form-control.input-lg.flat{
-  width: 80%;
-  margin-right: 5px;
+
+
+
+.negative span,
+span.negative,
+i.negative {
+  color: red;
 }
 
-.add_goal>.form-control.input-lg.flat.goal_name_input {
-  width: 40%;
-  margin-right: 5px;
-  padding-left: 0;
+.positive span,
+span.positive,
+i.positive {
+  color: green;
 }
 
-
-.add_goal>.form-control.input-lg.flat.goal_amount_input,
-.add_goal>.form-control.input-lg.flat.goal_date_input {
-  width: 20%;
-  margin-right: 5px;
+table.low_font_size{
+  font-size: 0.8em;
 }
-
-.goal_name {
-  width: 40%;
-  margin-right: 5px;
-  padding-left: 0;
-}
-
-.goal_amount,
-.goal_date {
- width: 20%;
- margin-right: 5px;
-}
-
-.delete_goal {
-  width: 10%;
-  float:left;
-  text-align: center;
-}
-
-.border_bottom {
-  border-bottom: 1px solid black;
-}
-
 
 
 @media(max-width: 1199px) {
   .add_account>.form-control.input-lg.flat{
-    width: 75%;
-  }
-
-  .add_goal>.form-control.input-lg.flat.goal_name_input {
-    width: 30%;
-  }
-
-  .add_goal>.form-control.input-lg.flat.goal_amount_input,
-  .add_goal>.form-control.input-lg.flat.goal_date_input {
-    width: 25%;
-  }
-
-  .goal_name {
-    width: 30%;
-  }
-
-  .goal_amount,
-  .goal_date {
-    width: 25%;
-  }
-
-
-  .delete_goal {
-    width: 10%;
+    width: 70%;
   }
 }
 
@@ -223,20 +158,5 @@
   .navbar-brand {
     font-size: 2.5em;
     float: inherit;
-  }
-
-  .add_goal>input{
-    width: 100% !important;
-    margin-bottom: 5px;
-    padding-left: 0;
-  }
-
-  .goal_name,
-  .goal_amount,
-  .goal_date,
-  .delete_goal {
-    width: 45%;
-    display: inline-block;
-    text-align: center;
   }
 }

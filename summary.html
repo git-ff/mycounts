@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Summary | MyCounts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Loading Bootstrap -->
+  <link href="assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loading Flat UI -->
+  <link href="assets/css/flat-ui.min.css" rel="stylesheet">
+  <!-- Loading main style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+  </header>
+
+  <main>
+    <div class="container"> 
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 child">
+          <!-- BEGIN panel -->
+          <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h2>Обзор счетов</h2>
+          </div><!-- END panel-heading -->
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h5 class="panel-title">
+                  <span class="pull-left">Общая сумма</span> <span class="pull-right">Остаток &nbsp;&nbsp;<span class="positive">2 000-00</span></span>
+                      <br>
+                    </h5>
+                  </div>
+              </div>
+              <div class="panel panel-default">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse_summary_account01">
+                  <div class="panel-heading">
+                    <h5 class="panel-title">
+                      <span class="pull-left">Счёт 01</span> <span class="pull-right">Остаток &nbsp;&nbsp;<span class="positive">1 000-00</span></span>
+                      <br>
+                    </h5>
+                  </div>
+                </a>
+                <div class="clearfix"></div>
+                <div id="collapse_summary_account01" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <table class="table table-condensed low_font_size">
+                      <thead>
+                        <tr>
+                          <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+                            <span>Движение</span>
+                          </th><!-- left part -->
+                          <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
+                          <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="positive">
+                          <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
+                            <span>Нашёл</span>
+                          </td>
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                            <span>11.05.2016</span>
+                          </td><!-- middle part -->
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                            <span>+ 2 000</span>
+                          </td><!-- right part -->
+                        </tr>
+
+                        <tr class="negative">
+                          <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
+                            <span>Потерял</span>
+                          </td>
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                            <span>11.05.2016</span>
+                          </td> <!-- middle part -->
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                            <span>- 2 000</span>
+                          </td><!-- right part -->
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- END panel-body -->
+                </div><!-- END collapse_one_currency -->
+              </div><!-- END panel -->
+              <div class="panel panel-default">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse_summary_account02">
+                  <div class="panel-heading">
+                    <h5 class="panel-title">
+                      <span class="pull-left">Счёт 02</span> <span class="pull-right">Остаток &nbsp;&nbsp;<span class="positive">1 000-00</span></span>
+                      <br>
+                    </h5>
+                  </div>
+                </a>
+                <div class="clearfix"></div>
+                <div id="collapse_summary_account02" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <table class="table table-condensed low_font_size">
+                      <thead>
+                        <tr>
+                          <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+                            <span>Движение</span>
+                          </th><!-- left part -->
+                          <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
+                          <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="positive">
+                          <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
+                            <span>Нашёл</span>
+                          </td>
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                            <span>11.05.2016</span>
+                          </td><!-- middle part -->
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                            <span>+ 2 000</span>
+                          </td><!-- right part -->
+                        </tr>
+
+                        <tr class="negative">
+                          <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
+                            <span>Потерял</span>
+                          </td>
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                            <span>11.05.2016</span>
+                          </td> <!-- middle part -->
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                            <span>- 2 000</span>
+                          </td><!-- right part -->
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- END panel-body -->
+                </div><!-- END collapse_one_currency -->
+              </div><!-- END panel -->
+            </div><!-- END panel-group -->
+
+          </div><!-- END panel -->
+        </div><!-- END col -->
+      </div><!-- END row -->
+    </div><!-- END container -->
+
+  </main>
+
+<footer>
+</footer>
+
+
+  <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+  <script src="assets/js/vendor/jquery.min.js"></script>
+
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/vendor/video.js"></script>
+  <script src="assets/js/flat-ui.min.js"></script>
+  <script src="assets/js/application.js"></script>
+
+</body>
+
+</html>
