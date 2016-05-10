@@ -37,7 +37,7 @@
       <div class="row" >
 
         <!-- BEGIN CENTER COLUMN -->
-        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 child">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 vertical-align">
 
           <!-- BEGIN panel -->
           <div class="panel panel-default">
@@ -47,58 +47,56 @@
             </div><!-- END panel-heading -->
             <div class="panel-body">
 
-              <form class="form-inline" role="account_list_management">
-                <!-- BEGIN form-group -->
-                <div class="form-group add_account">
-                  <input type="text" class="form-control input-lg flat" placeholder="Укажите название счёта" autofocus>
-                  <button class="btn btn-primary btn-lg btn-block hidden-sm hidden-md hidden-lg" type="submit">Добавить</button>
-                  <button class="btn btn-primary btn-lg pull-right hidden-xs" type="submit">Добавить</button>
-                </div><!-- END form-group -->
+              <form class="form" role="form">
+                <div class="col-lg-12">
+                  <div class="input-group">
+                    <input type="text" class="form-control input-md flat" placeholder="Название нового счёта" autofocus>
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Добавить</button>
+                    </span>
+                  </div><!-- END input-group -->
+                </div><!-- END col-lg-12 -->
               </form>
 
-              <div class="accounts">
+              <br class="hidden-md hidden-sm hidden-xs">
+              <br>
 
-                <div class="account_holder">
-                  <a class="select_account" href="#">
-                    <div class="account_name"><p>Тинькофф USD</p></div>
+              <div class="col-xs-12">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">
+                    Тинькофф USD
+                    <span class="pull-right">
+                      <button class="btn btn-sm btn-delete" type="submit">
+                        <i class="glyphicon glyphicon-trash"></i>
+                      </button>
+                    </span>
                   </a>
-                  <div class="account_placeholder">&nbsp;</div>
-                  <div class="delete_acc pull-right">
-                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                  </div>   
-                </div>
-
-                <div class="account_holder">
-                  <a class="select_account" href="#">
-                    <div class="account_name"><p>Тинькофф RUB</p></div>
+                  <a href="#" class="list-group-item">
+                    Тинькофф RUB
+                    <span class="pull-right">
+                      <button class="btn btn-sm btn-delete" type="submit">
+                        <i class="glyphicon glyphicon-trash"></i>
+                      </button>
+                    </span>
                   </a>
-                  <div class="account_placeholder">&nbsp;</div>
-                  <div class="delete_acc pull-right">
-                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                  </div>  
-                </div>
-
-                <div class="account_holder">
-                  <a class="select_account" href="#">
-                    <div class="account_name"><p>Альфабанк USD</p></div>
+                  <a href="#" class="list-group-item">
+                    Альфабанк USD
+                    <span class="pull-right">
+                      <button class="btn btn-sm btn-delete" type="submit">
+                        <i class="glyphicon glyphicon-trash"></i>
+                      </button>
+                    </span>
                   </a>
-                  <div class="account_placeholder">&nbsp;</div>
-                  <div class="delete_acc pull-right">
-                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                  </div>
-                </div>
-
-                <div class="account_holder">
-                  <a class="select_account" href="#">
-                    <div class="account_name"><p>Альфабанк RUB</p></div>
+                  <a href="#" class="list-group-item">
+                    Альфабанк RUB
+                    <span class="pull-right">
+                      <button class="btn btn-sm btn-delete" type="submit">
+                        <i class="glyphicon glyphicon-trash"></i>
+                      </button>
+                    </span>
                   </a>
-                  <div class="account_placeholder">&nbsp;</div>
-                  <div class="delete_acc pull-right"> 
-                    <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                  </div>  
-                </div>
-
-              </div><!-- END accounts -->
+                </div><!-- END list-group -->
+              </div><!-- END col-xs-12 -->
 
             </div><!-- END panel-body -->
           </div><!-- END panel -->

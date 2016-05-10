@@ -1,8 +1,4 @@
-.parent {
-  position: relative;
-}
-
-.child {
+.vertical-align {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,93 +12,34 @@
 
 
 
-
-
-.navbar,
-.navbar-tabs{
-  margin-bottom: 0px;
+a.list-group-item,
+.list-group-item .btn-delete {
+  color: #16a085;
 }
 
-.add_account {
-  width: 100%;
+a.list-group-item:hover {
+  color: #48c9b0;
 }
 
-.add_account>input,
-.add_goal_name>input{
- padding-left: 0;
+#accordion .no-side-borders {
+  border-color: #ddd;
+  border-left: none;
+  border-right: none;
 }
 
-.account_holder,
-.goal_holder {
-  width: 100%;
-  height: 35px;
-  margin: 5px 0;
-  padding: 5px 0;
+#accordion .no-side-borders {
+ border-top: none;
 }
 
-.account_name,
-.account_placeholder,
-.delete_acc {
-  display: inline-block;
-  float:left;
+
+.btn-delete {
+  background-color: transparent;
+  font-size: inherit;
 }
 
-.account_name {
- width: 85%;
- text-align: left;
-}
-
-.account_placeholder {
-  width: 5%;
-}
-
-.delete_acc {
-  width: 10%;
-  float:left;
-  text-align: center;
-}
-
-.account_name p,
-.account_placeholder,
-.delete_acc i {
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-}
-
-.delete_acc i:hover {
+.btn-delete:hover {
   color: red;
 }
-
-
-
-.table-hover tbody tr:hover td,
-.table-hover tbody tr:hover th {
-  background-color: #B5EDFF;
-}
-
-.progress {
-  margin-bottom: 0;
-  height: 20px;
-  vertical-align: middle;
-  margin-top: 3px;
-}
-
-.progress-bar {
-  line-height: 20px;
-}
-
-.summary {
-  font-weight: 700;
-}
-
-
-.add_account>.form-control.input-lg.flat{
-  width: 73%;
-  margin-right: 5px;
-}
-
-
 
 
 .negative span,
@@ -122,41 +59,8 @@ table.low_font_size{
 }
 
 
-@media(max-width: 1199px) {
-  .add_account>.form-control.input-lg.flat{
-    width: 70%;
-  }
-}
-
-
 @media(max-width: 767px) {
   h1 {
     font-size: 2.5em;
-  }
-
-  .add_account>input{
-    width: 100% !important;
-    margin-bottom: 5px;
-  }
-
-  .account_name{
-    width: 80%;
-  }
-
-  .account_placeholder{
-    width: 1%;
-  }
-
-  .delete_acc {
-    width: 19%;
-  }
-
-  .navbar-header {
-    margin-bottom: 5px;
-  }
-
-  .navbar-brand {
-    font-size: 2.5em;
-    float: inherit;
   }
 }

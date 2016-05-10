@@ -28,21 +28,16 @@
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 child text-center">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 vertical-align text-center">
 
           <header class="page-header">
             <h1><a href="#">MyCounts</a></h1>
           </header>
 
-          <nav class="navbar navbar-default" role="navigation">
-            <ul class="nav nav-tabs nav-justified">
-              <li class="log-in active"><a href="#login_pane" data-toggle="tab">Вход</a></li>
-              <li class="registration"><a href="#register" data-toggle="tab">Регистрация</a></li>
-            </ul>
-
-          </nav> <!-- END navbar -->
-          <!-- END NAVIGATION -->
-
+          <ul class="nav nav-tabs nav-justified">
+            <li class="log-in active"><a href="#login_pane" data-toggle="tab">Вход</a></li>
+            <li class="registration"><a href="#register" data-toggle="tab">Регистрация</a></li>
+          </ul>
 
           <div class="tab-content">
             <!-- login_pane -->
@@ -58,68 +53,72 @@
 
                   <!-- BEGIN form-group password -->
                   <div class="form-group">
-                    <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
+                    <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass" />
                     <label class="login-field-icon fui-lock" for="login-pass"></label>
                   </div><!-- END form-group password -->
 
 
-                <!-- BEGIN checkbox_remember
-                <div class="bootstrap-switch-square">
+                  <!-- BEGIN checkbox_remember
+                  <div class="bootstrap-switch-square">
                   <input type="checkbox" data-toggle="switch" name="square-switch" id="switch-remember" />
                   <label for="switch-remember">Запомнить </label><i class="glyphicon glyphicon-info-sign" data-toggle="popover" data-placement="bottom" tabindex="0" data-trigger="focus" title="<h6>Запомнить вход</h6>" data-content="На этом устройстве до очистки истории браузера или cookies"></i>
-                </div>END checkbox_remember
+                  </div>END checkbox_remember
 
-                <br> -->
+                  <br> -->
 
-                <button class="btn btn-primary btn-lg btn-block btn-wide hidden-sm hidden-md hidden-lg" type="submit">Войти</button>
-                <button class="btn btn-primary btn-lg btn-wide hidden-xs" type="submit">Войти</button>
+                  <button class="btn btn-primary btn-lg btn-block btn-wide hidden-sm hidden-md hidden-lg" type="submit">Войти</button>
+                  <button class="btn btn-primary btn-lg btn-wide hidden-xs" type="submit">Войти</button>
 
-                <!-- <a class="login-link" href="#">Вспомнить пароль</a>  -->
+                  <!-- <a class="login-link" href="#">Вспомнить пароль</a>  -->
 
-              </div><!-- END login-form -->
-            </form>
-          </div><!-- END tab-pane #login_pane -->
+                </div><!-- END login-form -->
+              </form>
+            </div><!-- END tab-pane #login_pane -->
 
-          <!-- register -->
-          <div class="tab-pane" id="register">
-            <!-- BEGIN login-form-register -->
-            <form action="#">
-              <div class="login-form">
+            <!-- register -->
+            <div class="tab-pane" id="register">
+              <!-- BEGIN login-form-register -->
+              <form action="#">
+                <div class="login-form">
 
-                <!-- END login-register -->
-                <div class="form-group">
-                  <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name-register" />
-                  <label class="login-field-icon fui-user" for="login-name-register"></label>
-                </div><!-- END login-register  -->
+                  <!-- END login-register -->
+                  <div class="form-group">
+                    <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name-register" />
+                    <label class="login-field-icon fui-user" for="login-name-register"></label>
+                  </div><!-- END login-register  -->
 
-                <!-- BEGIN password-register -->
-                <div class="form-group">
-                  <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass-register" />
-                  <label class="login-field-icon fui-lock" for="login-pass-register">
-                  </label>
-                </div><!-- END password-register -->
+                  <!-- BEGIN password-register -->
+                  <div class="form-group">
+                    <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass-register" />
+                    <label class="login-field-icon fui-lock" for="login-pass-register">
+                    </label>
+                  </div><!-- END password-register -->
 
-                <!-- BEGIN checkbox_agree
-                <div class="bootstrap-switch-square">
+                  <!-- BEGIN checkbox_agree
+                  <div class="bootstrap-switch-square">
                   <input type="checkbox" data-toggle="switch" name="square-switch" id="switch-agree-register" />
                   <label for="switch-agree-register">Принимаю <a href="#">правила</a>.</label>
-                </div>END checkbox_agree
-                <br>              -->
+                  </div>END checkbox_agree
+                  <br>              -->
 
 
-                <button class="btn btn-primary btn-lg btn-block hidden-sm hidden-md hidden-lg" type="submit">Зарегистрироваться</button>
-                <button class="btn btn-primary btn-lg hidden-xs" type="submit">Зарегистрироваться</button>
+                  <button class="btn btn-primary btn-lg btn-block hidden-sm hidden-md hidden-lg" type="submit">
+                    Зарегистрироваться
+                  </button>
+                  <button class="btn btn-primary btn-lg hidden-xs" type="submit">
+                    Зарегистрироваться
+                  </button>
 
-                <!--   <div class="login-link">&nbsp;</div> -->
-              </div><!-- END login-form -->
-            </form><!-- END login-form-register -->
-          </div><!-- END tab-pane #register -->
-        </div><!-- tab-content -->
+                  <!--   <div class="login-link">&nbsp;</div> -->
+                </div><!-- END login-form -->
+              </form><!-- END login-form-register -->
+            </div><!-- END tab-pane #register -->
+          </div><!-- tab-content -->
 
-      </div><!-- END col -->
-    </div><!-- END row -->
-  </div><!-- END container -->
-</main>
+        </div><!-- END col -->
+      </div><!-- END row -->
+    </div><!-- END container -->
+  </main>
 
 
 
