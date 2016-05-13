@@ -10,7 +10,24 @@
   border-bottom: 0;
 }
 
+.nav-tabs.nav-justified>li>a {
+  border-bottom: 1px solid #edeff1;
+  margin-bottom: 0;
+}
 
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:hover,
+.nav-tabs.nav-justified>.active>a:focus {
+  border: none;
+  border-bottom: 1px solid #edeff1;
+  background-color: #edeff1;
+}
+
+
+.login-form {
+  border-radius: 0 0 6px 6px;
+  margin-top: -1px;
+}
 
 a.list-group-item,
 .list-group-item .btn-delete {
@@ -56,6 +73,14 @@ i.positive {
 
 table.low_font_size{
   font-size: 0.8em;
+}
+
+.panel-default>.panel-heading {
+  background-color: #edeff1;
+}
+
+.panel-default>.panel-heading.clearfix {
+  background-color: white;
 }
 
 
