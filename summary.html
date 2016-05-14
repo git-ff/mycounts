@@ -35,253 +35,225 @@
             <div class="panel-heading">
               <h2>Обзор счетов</h2>
             </div><!-- END panel-heading -->
-            <div class="panel-group" id="accordion">
-              <div class="panel-body">
-                <div class="panel panel-default">
-                  <div class="panel-heading clearfix">
-                    <h5 class="panel-title">
+            <div class="panel-body">
+              <div class="col-xs-12">
+                <div class="list-group" id="accordion">
+                  <div class="panel panel-default">
+                    <span class="list-group-item clearfix total_sum">
                       <span class="pull-left">Общая сумма</span>
-                      <span class="pull-right">Остаток: &nbsp;&nbsp;
-                        <br class="hidden-lg hidden-md hidden-sm">
-                        <span class="positive">4 000-00</span>
-                      </span>
-                    </h5>
-                  </div><!-- END panel-heading -->
+                      <span class="pull-right">Остаток:<span class="hidden-xs">&nbsp;&nbsp;</span>
+                      <br class="hidden-lg hidden-md hidden-sm">
+                      <span class="positive">4 000-00</span>
+                    </span>
+                  </span>
 
-                </div><!-- END panel -->
-                <!-- Account 01 -->
-                <div class="panel panel-default">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_summary_account01">
-                    <div class="panel-heading clearfix">
-                      <h5 class="panel-title">
-                        <span class="pull-left">Тинькофф USD</span>
-                        <span class="pull-right">Остаток: &nbsp;&nbsp;
-                          <br class="hidden-lg hidden-md hidden-sm">
-                          <span class="positive">1 000-00</span>
-                        </span>
-                      </h5>
-                    </div>
-                  </a>
+                  <!-- Account 01 -->
+                  <a class="list-group-item clearfix" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_summary_account01">
+                    <span class="pull-left">Тинькофф USD</span>
+                    <span class="pull-right">Остаток:<span class="hidden-xs">&nbsp;&nbsp;</span>
+                    <br class="hidden-lg hidden-md hidden-sm">
+                    <span class="positive">1 000-00</span>
+                  </span>
+                </a>
+                <div id="collapse_summary_account01" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <table class="table table-condensed low_font_size">
+                      <thead>
+                        <tr>
+                          <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left">
+                            <span>Движение</span>
+                          </th><!-- left part -->
+                          <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
+                          <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="positive">
+                          <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                            <span>Нашёл</span>
+                          </td>
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                            <span>11.05.2016</span>
+                          </td><!-- middle part -->
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                            <span>+ 2 000</span>
+                          </td><!-- right part -->
+                        </tr>
 
-                  <div id="collapse_summary_account01" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <table class="table table-condensed low_font_size">
-                        <thead>
-                          <tr>
-                            <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
-                              <span>Движение</span>
-                            </th><!-- left part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="positive">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Нашёл</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td><!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>+ 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
-
-                          <tr class="negative">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Потерял</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td> <!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>- 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div><!-- END panel-body -->
-                  </div><!-- END collapse_one_currency -->
-                </div><!-- END panel --><!-- END Account 01 -->
+                        <tr class="negative">
+                          <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                            <span>Потерял</span>
+                          </td>
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                            <span>11.05.2016</span>
+                          </td> <!-- middle part -->
+                          <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                            <span>- 2 000</span>
+                          </td><!-- right part -->
+                        </tr>
+                      </tbody>
+                    </table>                   
+                  </div>
+                </div><!-- END #collapse_summary_account01 --><!-- END Account 01 -->
 
                 <!-- Account 02 -->
-                <div class="panel panel-default">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_summary_account02">
-                    <div class="panel-heading clearfix">
-                      <h5 class="panel-title">
-                        <span class="pull-left">Тинькофф RUB</span>
-                        <span class="pull-right">Остаток: &nbsp;&nbsp;
-                          <br class="hidden-lg hidden-md hidden-sm">
-                          <span class="positive">1 000-00</span>
-                        </span>
-                      </h5>
-                    </div>
-                  </a>
-                  <div class="clearfix"></div>
-                  <div id="collapse_summary_account02" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <table class="table table-condensed low_font_size">
-                        <thead>
-                          <tr>
-                            <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
-                              <span>Движение</span>
-                            </th><!-- left part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="positive">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Нашёл</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td><!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>+ 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
+                <a class="list-group-item clearfix" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_summary_account02">
+                  <span class="pull-left">Тинькофф RUB</span>
+                  <span class="pull-right">Остаток:<span class="hidden-xs">&nbsp;&nbsp;</span>
+                  <br class="hidden-lg hidden-md hidden-sm">
+                  <span class="positive">1 000-00</span>
+                </span>
+              </a>
+              <div id="collapse_summary_account02" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <table class="table table-condensed low_font_size">
+                    <thead>
+                      <tr>
+                        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left">
+                          <span>Движение</span>
+                        </th><!-- left part -->
+                        <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
+                        <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="positive">
+                        <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                          <span>Нашёл</span>
+                        </td>
+                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                          <span>11.05.2016</span>
+                        </td><!-- middle part -->
+                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                          <span>+ 2 000</span>
+                        </td><!-- right part -->
+                      </tr>
 
-                          <tr class="negative">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Потерял</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td> <!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>- 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div><!-- END panel-body -->
-                  </div><!-- END collapse_one_currency -->
-                </div><!-- END panel --><!-- END Account 02 -->
+                      <tr class="negative">
+                        <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                          <span>Потерял</span>
+                        </td>
+                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                          <span>11.05.2016</span>
+                        </td> <!-- middle part -->
+                        <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                          <span>- 2 000</span>
+                        </td><!-- right part -->
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div><!-- END #collapse_summary_account02 --><!-- END Account 02 -->
 
-                <!-- Account 03 -->
-                <div class="panel panel-default">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_summary_account02">
-                    <div class="panel-heading clearfix">
-                      <h5 class="panel-title">
-                        <span class="pull-left">Альфабанк USD</span>
-                        <span class="pull-right">Остаток: &nbsp;&nbsp;
-                          <br class="hidden-lg hidden-md hidden-sm">
-                          <span class="positive">1 000-00</span>
-                        </span>
-                      </h5>
-                    </div>
-                  </a>
-                  <div class="clearfix"></div>
-                  <div id="collapse_summary_account02" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <table class="table table-condensed low_font_size">
-                        <thead>
-                          <tr>
-                            <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
-                              <span>Движение</span>
-                            </th><!-- left part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="positive">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Нашёл</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td><!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>+ 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
+              <!-- Account 03 -->
+              <a class="list-group-item clearfix" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_summary_account03">
+                <span class="pull-left">Альфабанк USD</span>
+                <span class="pull-right">Остаток:<span class="hidden-xs">&nbsp;&nbsp;</span>
+                <br class="hidden-lg hidden-md hidden-sm">
+                <span class="positive">1 000-00</span>
+              </span>
+            </a>
+            <div id="collapse_summary_account03" class="panel-collapse collapse">
+              <div class="panel-body">
+                <table class="table table-condensed low_font_size">
+                  <thead>
+                    <tr>
+                      <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left">
+                        <span>Движение</span>
+                      </th><!-- left part -->
+                      <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
+                      <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="positive">
+                      <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                        <span>Нашёл</span>
+                      </td>
+                      <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                        <span>11.05.2016</span>
+                      </td><!-- middle part -->
+                      <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                        <span>+ 2 000</span>
+                      </td><!-- right part -->
+                    </tr>
 
-                          <tr class="negative">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Потерял</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td> <!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>- 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div><!-- END panel-body -->
-                  </div><!-- END collapse_one_currency -->
-                </div><!-- END panel --><!-- END Account 03 -->
+                    <tr class="negative">
+                      <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                        <span>Потерял</span>
+                      </td>
+                      <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                        <span>11.05.2016</span>
+                      </td> <!-- middle part -->
+                      <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                        <span>- 2 000</span>
+                      </td><!-- right part -->
+                    </tr>
+                  </tbody>
+                </table> 
+              </div>
+            </div><!-- END #collapse_summary_account03 --><!-- END Account 03 -->
 
-                <!-- Account 04 -->
-                <div class="panel panel-default">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_summary_account02">
-                    <div class="panel-heading clearfix">
-                      <h5 class="panel-title">
-                        <span class="pull-left">Альфабанк RUB</span>
-                        <span class="pull-right">Остаток: &nbsp;&nbsp;
-                          <br class="hidden-lg hidden-md hidden-sm">
-                          <span class="positive">1 000-00</span>
-                        </span>
-                      </h5>
-                    </div>
-                  </a>
-                  <div class="clearfix"></div>
-                  <div id="collapse_summary_account02" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <table class="table table-condensed low_font_size">
-                        <thead>
-                          <tr>
-                            <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
-                              <span>Движение</span>
-                            </th><!-- left part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
-                            <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="positive">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Нашёл</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td><!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>+ 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
+            <!-- Account 04 -->
+            <a class="list-group-item clearfix" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_summary_account04">
+              <span class="pull-left">Альфабанк RUB</span>
+              <span class="pull-right">Остаток:<span class="hidden-xs">&nbsp;&nbsp;</span>
+              <br class="hidden-lg hidden-md hidden-sm">
+              <span class="positive">1 000-00</span>
+            </span>
+          </a>
+          <div id="collapse_summary_account04" class="panel-collapse collapse">
+            <div class="panel-body">
+              <table class="table table-condensed low_font_size">
+                <thead>
+                  <tr>
+                    <th class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left">
+                      <span>Движение</span>
+                    </th><!-- left part -->
+                    <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Дата</th><!-- middle part -->
+                    <th class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">Сумма</th><!-- right part -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="positive">
+                    <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                      <span>Нашёл</span>
+                    </td>
+                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                      <span>11.05.2016</span>
+                    </td><!-- middle part -->
+                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                      <span>+ 2 000</span>
+                    </td><!-- right part -->
+                  </tr>
 
-                          <tr class="negative">
-                            <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5"><!-- left part -->
-                              <span>Потерял</span>
-                            </td>
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
-                              <span>11.05.2016</span>
-                            </td> <!-- middle part -->
-                            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
-                              <span>- 2 000</span>
-                            </td><!-- right part -->
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div><!-- END panel-body -->
-                  </div><!-- END collapse_one_currency -->
-                </div><!-- END panel --><!-- END Account 04 -->
+                  <tr class="negative">
+                    <td class="col-xs-6 col-sm-6 col-md-6 col-lg-5 text-left"><!-- left part -->
+                      <span>Потерял</span>
+                    </td>
+                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">
+                      <span>11.05.2016</span>
+                    </td> <!-- middle part -->
+                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-4 text-right">
+                      <span>- 2 000</span>
+                    </td><!-- right part -->
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- END panel-body -->
+          </div><!-- END #collapse_summary_account04 --><!-- END Account 04 -->
 
-              </div><!-- END panel-body -->
-            </div><!-- END panel-group -->
-          </div><!-- END panel -->
+        </div><!-- END panel -->
+      </div><!-- END list-group -->
+    </div><!-- END col-xs-12 -->
+  </div><!-- END panel-body -->
+</div><!-- END panel -->
 
-        </div><!-- END col -->
-      </div><!-- END row -->
-    </div><!-- END container -->
+</div><!-- END col -->
+</div><!-- END row -->
+</div><!-- END container -->
 
-  </main>
+</main>
 
 <footer>
 </footer>

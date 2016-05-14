@@ -10,9 +10,14 @@
   border-bottom: 0;
 }
 
+
 .nav-tabs.nav-justified>li>a {
   border-bottom: 1px solid #edeff1;
   margin-bottom: 0;
+}
+
+.nav-tabs>li>a {
+ border: none;
 }
 
 .nav-tabs.nav-justified>.active>a,
@@ -23,11 +28,11 @@
   background-color: #edeff1;
 }
 
-
 .login-form {
   border-radius: 0 0 6px 6px;
   margin-top: -1px;
 }
+
 
 a.list-group-item,
 .list-group-item .btn-delete {
@@ -36,16 +41,6 @@ a.list-group-item,
 
 a.list-group-item:hover {
   color: #48c9b0;
-}
-
-#accordion .no-side-borders {
-  border-color: #ddd;
-  border-left: none;
-  border-right: none;
-}
-
-#accordion .no-side-borders {
- border-top: none;
 }
 
 
@@ -75,12 +70,13 @@ table.low_font_size{
   font-size: 0.8em;
 }
 
+
 .panel-default>.panel-heading {
   background-color: #edeff1;
 }
 
-.panel-default>.panel-heading.clearfix {
-  background-color: white;
+.list-group-item.clearfix.total_sum {
+  font-weight: 600;
 }
 
 
