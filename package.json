@@ -1,0 +1,17 @@
+{
+  "name": "mycounts",
+  "version": "0.0.1",
+  "description": "  \"description\": \"MyCounts - user can register=>login, add account, add income/expense/transfer between them and see reports between dates.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Nikolay",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.1"
+  }
+}
