@@ -12,6 +12,7 @@
   <!-- Loading main style -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
   <link rel="shortcut icon" href="assets/img/favicon.ico">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -43,17 +44,17 @@
             <!-- login_pane -->
             <div class="tab-pane active" id="login_pane">
               <!-- BEGIN login-form -->
-              <form action="#" id="login_form" method="post">
+              <form action="/api" id="login_form" method="post">
                 <div class="login-form">
                   <!-- BEGIN form-group login -->
                   <div class="form-group">
-                    <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name" name="loginemail" />
+                    <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name" name="emaillog" />
                     <label class="login-field-icon fui-user" for="login-name"></label>
                   </div><!-- END form-group login -->
 
                   <!-- BEGIN form-group password -->
                   <div class="form-group">
-                    <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass" name="loginpass" />
+                    <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass" name="passwordlog" />
                     <label class="login-field-icon fui-lock" for="login-pass"></label>
                   </div><!-- END form-group password -->
 
@@ -78,18 +79,18 @@
             <!-- register -->
             <div class="tab-pane" id="register">
               <!-- BEGIN login-form-register -->
-              <form action="#" id="register_form" method="post">
+              <form action="/api/" id="register_form" method="post">
                 <div class="login-form">
 
                   <!-- END login-register -->
                   <div class="form-group">
-                    <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name-register" name="registeremail" />
+                    <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name-register" name="emailreg" />
                     <label class="login-field-icon fui-user" for="login-name-register"></label>
                   </div><!-- END login-register  -->
 
                   <!-- BEGIN password-register -->
                   <div class="form-group">
-                    <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass-register" name="registerpass" />
+                    <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass-register" name="passwordreg" />
                     <label class="login-field-icon fui-lock" for="login-pass-register">
                     </label>
                   </div><!-- END password-register -->
