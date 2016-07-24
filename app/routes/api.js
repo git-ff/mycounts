@@ -14,7 +14,7 @@ function createToken(user){
     id: user.id,
     email: user.email
   }, secretKey, {   //from config.js
-    expiresIn: 1440 
+    expiresIn: 3600 //time in seconds
   });
   return token;
 };
@@ -33,12 +33,21 @@ module.exports = function(app, express) {
         password: request.body.passwordreg
       });
       user.save(function(error){
+        //if we catch error
         if(error){
-          response.send(error);
-          return;
+          //if user e-mail exists
+          if (error.code == 11000) {
+            return response.json({ success: false, message: 'A user with e-mail: ' + request.body.emailreg +' already exists. '});
+          }
+          //if any other error occured
+          else if (error.code != 11000){ 
+            response.send(error);
+            return;
+          };
+        //if no errors appeared
         } else {
-          response.json({message: 'User has been created'});
-        }
+            response.json({message: 'User ' + request.body.emailreg +' has been created'});
+          };
       });
 
       //else if email and pass for login provided - login and give token
@@ -58,19 +67,21 @@ module.exports = function(app, express) {
           //password matches?
           var validPassword = email.comparePassword(request.body.passwordlog);         
           if(!validPassword){
-            response.send({message: 'Invalid password'});
+            response.json({success: false, message: 'Wrong password for user ' + request.body.emaillog});
           } else {
+            //user is found, password matches - give token
             var token = createToken(email);           //token
+            console.log('created token: ' + token);
             response.json({
               success: true,
-              message: 'Successfully logged in.',
+              message: 'Successfully logged in as ' + request.body.emaillog,
               token: token
             });     //response.json
           };        //else
         };          //else if
       });           //select('password').exec(function(error, email) 
     };              //else if (request.body.emaillog
-  });               //api.post('/', function(request, response)
+  })               //api.post('/', function(request, response)
 
 
 
@@ -79,7 +90,6 @@ module.exports = function(app, express) {
     console.log('Smth came in');
     var token = request.body.token ||  request.query.token || request.headers['x-access-token']; //x-access-token is for postman
     //check if token exists
-    console.log(token);
     if(token) {
       jsonwebtoken.verify(token, secretKey, function(error, decoded) {
         if(error) {
@@ -88,7 +98,7 @@ module.exports = function(app, express) {
            message: 'Access denied. Failed to auth.'
          });
         } else {
-          //
+          //if ok - save for use in other requests (global variable)
           request.decoded = decoded;
           next();
         }
@@ -159,6 +169,50 @@ module.exports = function(app, express) {
 
   ;
 
+
+
+  //get userinfo
+  api.route('/user')
+  .get(function(request, response){
+    User.findOne({
+      _id: request.decoded.id
+    }, function (error, user) {
+      if(error) {
+        response.send(error);
+        return;
+      } else {
+        response.json({
+          user
+        });
+      }
+    });
+  })
+
+  //update user password
+  .put(function(request, response){
+    //get user
+    User.findOne({
+      _id: request.decoded.id
+    }, function (error, user) {
+      if(error) {
+        response.send(error);
+        return;
+      } else {
+        //if put has password, then
+        if (request.body.password) {
+          //assign password to 'password' field and save updated entry
+          user.password = request.body.password;
+          user.save(function(error) {
+            if (error) response.send(error);
+            // return success message
+            response.json({ message: 'User password updated!' });
+          });
+        } else {
+          response.write('pass update failed');
+        }
+      };
+    });
+  })
 
 
   //submit new entry
