@@ -26,11 +26,11 @@ angular.module('mainCtrl', [])
     Auth.login(vm.loginData.emaillog, vm.loginData.passwordlog)
     .then(function(data) {
       // if a user successfully logs in, redirect to users page
-      if (data.success)     
+      if (data.then)     
         $location.path('/newentry');
       else 
         vm.error = data.message;
-      
+
     });
   };
 
