@@ -1,0 +1,15 @@
++---app			- Node + Express - backend
+|   +---models
+|   \---routes
+\---public		- frontend
+    +---app		 - Angular
+    |   +---controllers
+    |   +---services
+    |   \---views
+    |       \---pages 	 - html
+    \---assets 		 - bootstrap, flatui, angular.js, style.css
+        +---css
+        +---fonts
+        \---libs
+            +---angular
+            \---flatui

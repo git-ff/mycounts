@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>SignIn / SignUp  |  MyCounts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <base href="/">
+  
+  <!-- Loading Bootstrap -->
+  <link href="assets/libs/flatui/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loading Flat UI -->
+  <link href="assets/libs/flatui/css/flat-ui.min.css" rel="stylesheet">
+  <!-- Loading main style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="../../assets/libs/flatui/img/favicon.ico">
+
+  <!-- Angular -->
+  <script src='assets/libs/angular/angular.js'></script>
+  <script src='assets/libs/angular/angular-route.min.js'></script>
+  
+
+  <!-- Controllers -->
+  <script src='app/controllers/mainCtrl.js'></script>
+  
+  <!-- Services -->
+  <script src='app/services/authService.js'></script>
+  <script src='app/services/userService.js'></script>
+  
+  <!-- Main Angular services -->
+  <script src='app/app.js'></script>
+  <script src='app/app.routes.js'></script>
+
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body ng-app="userApp" ng-controller="mainController as main">
+  <header>
+  </header>
+  <main>
+    <div class="container">
+      <div ng-view></div>
+    </div><!-- END container -->
+  </main>
+
+
+
+<footer>  
+</footer>
+
+
+
+
+
+  <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+  <script src="assets/libs/flatui/js/vendor/jquery.min.js"></script>
+
+  <script src="assets/libs/flatui/js/vendor/bootstrap.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/libs/flatui/js/flat-ui.min.js"></script>
+  <script src="assets/libs/flatui/js/application.js"></script>
+
+  <!-- Init popover
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover({html:'true'})
+    })
+  </script>
+ -->
+
+</body>
+</html>

@@ -14,8 +14,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('short'));
 
-var api = require('./app/routes/api')(app, express);
-app.use('/api', api);
+
+var apiRoutes = require('./app/routes/api')(app, express);
+app.use('/api', apiRoutes);
 
 
 //declare and serve index.html
@@ -25,15 +26,16 @@ app.use(express.static(publicPath));
 
 mongoose.connect(config.database, function(error){
   if(error){
-    console.error.bind(console, 'connection error:')
+    console.error.bind(console, 'Connection error:' + error)
   } else {
     console.log("MongoDB connected successfully to:\n" + config.database);
   }
 });
 
 
-app.get('/', function(request, response) {
-  response.status(200).json('Hello, myCounts!');
+//provide frontend
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/public/app/views/index.html'));
 });
 
 
@@ -43,5 +45,6 @@ app.listen(config.port, function(error){
   } else {
     console.log('\nListening myCounts on http://localhost:' + config.port);
     console.log('We run in _' + app.get('env') + '_ mode');
+    console.log('Database status:');
   }
 });

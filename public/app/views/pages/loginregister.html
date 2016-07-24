@@ -1,0 +1,76 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 vertical-align text-center">
+
+    <header class="page-header">
+      <h1><a href="#">MyCounts</a></h1>
+    </header>
+
+    <ul class="nav nav-tabs nav-justified">
+      <li class="log-in active"><a href="#login_pane" data-toggle="tab">Вход</a></li>
+      <li class="registration"><a href="#register" data-toggle="tab">Регистрация</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- login_pane -->
+      <div class="tab-pane active" id="login_pane">
+        <!-- BEGIN login-form -->
+        <form ng-submit="login.doLogin()">
+          <div class="login-form">
+            <!-- BEGIN form-group login -->
+            <div class="form-group">
+              <input type="email" class="form-control login-field" value="" placeholder="e-mail" ng-model="login.loginData.emaillog" />
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div><!-- END form-group login -->
+
+            <!-- BEGIN form-group password -->
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Пароль" ng-model="login.loginData.passwordlog" />
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div><!-- END form-group password -->
+
+
+
+            <button class="btn btn-primary btn-lg btn-block btn-wide hidden-sm hidden-md hidden-lg" type="submit">Войти</button>
+            <button class="btn btn-primary btn-lg btn-wide hidden-xs" type="submit">Войти</button>
+
+            <!-- <a class="login-link" href="#">Вспомнить пароль</a>  -->
+
+          </div><!-- END login-form -->
+        </form>
+      </div><!-- END tab-pane #login_pane -->
+
+      <!-- register -->
+      <div class="tab-pane" id="register">
+        <!-- BEGIN login-form-register -->
+        <form action="/api/" id="register_form" method="post">
+          <div class="login-form">
+
+            <!-- END login-register -->
+            <div class="form-group">
+              <input type="email" class="form-control login-field" value="" placeholder="e-mail" id="login-name-register" name="emailreg" />
+              <label class="login-field-icon fui-user" for="login-name-register"></label>
+            </div><!-- END login-register  -->
+
+            <!-- BEGIN password-register -->
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Пароль" id="login-pass-register" name="passwordreg" />
+              <label class="login-field-icon fui-lock" for="login-pass-register">
+              </label>
+            </div><!-- END password-register -->
+
+
+            <button class="btn btn-primary btn-lg btn-block hidden-sm hidden-md hidden-lg" type="submit">
+              Зарегистрироваться
+            </button>
+            <button class="btn btn-primary btn-lg hidden-xs" type="submit">
+              Зарегистрироваться
+            </button>
+
+            <!--   <div class="login-link">&nbsp;</div> -->
+          </div><!-- END login-form -->
+        </form><!-- END login-form-register -->
+      </div><!-- END tab-pane #register -->
+    </div><!-- tab-content -->
+
+  </div><!-- END col -->
+</div><!-- END row -->
